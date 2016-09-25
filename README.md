@@ -41,7 +41,7 @@ presented in class.
 	  Python with `brew install python3`.
 	* Linux: please use your package manager to install the latest Python 3.x.
 
-2. Create a [virtual environment][venv] (optional).
+2. Optional. Create a [virtual environment][venv].
    ```sh
    pyvenv /path/to/new/virtual/env
    . /path/to/new/virtual/env/bin/activate
@@ -53,7 +53,7 @@ presented in class.
    cd ntds_2016
    ```
 
-4. Install the basic packages from [PyPI] (non-Anaconda users). If it fails, it
+4. Non-Anaconda users. Install the basic packages from [PyPI]. If it fails, it
    is probably because you need to install some native packages with your
    package manager. Please read the error messages. Remember, Google is your
    friend !
