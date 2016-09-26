@@ -1,3 +1,5 @@
+#!/bin/env python3
+
 print('A Network Tour of Data Science: Python installation test')
 
 import sys
