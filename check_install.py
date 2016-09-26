@@ -12,10 +12,28 @@ try:
     import numpy
     import scipy
     import matplotlib
+    import sklearn
+
     import pandas
+    import xlrd
+    import xlwt
+    import tables
+    import sqlalchemy
+
+    import statsmodels
+    import sympy
+    import autograd
     import bokeh
+    import numba
+    import Cython
+
+    import keras
+    #import theano
+    #import tensorflow
+
     import jupyter
     import IPython, ipykernel
+
 except:
     print('Your installation misses a package.')
     print('Please look for the package name below and install it with your '
@@ -23,4 +41,4 @@ except:
     raise
 
 print('You did successfully install Python {}.{} and '
-      'the basic scientific Python packages.'.format(major, minor))
+      'most of the Python packages we will use.'.format(major, minor))
