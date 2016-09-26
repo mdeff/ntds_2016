@@ -38,32 +38,45 @@ presented in class.
 	  Most of the packages we'll use during the exercises are included in the
 	  distribution.
 	* Mac: we recommend that you use the [Homebrew] package manager and install
-	  Python with `brew install python3`.
+	  Python with `brew install python3`. You can also use [Anaconda].
 	* Linux: please use your package manager to install the latest Python 3.x.
 
-2. Optional. Create a [virtual environment][venv].
-   ```sh
-   pyvenv /path/to/new/virtual/env
-   . /path/to/new/virtual/env/bin/activate
-   ```
-
-3. Clone the course repository.
+2. Clone the course repository. You may need to first install [git].
    ```sh
    git clone https://github.com/mdeff/ntds_2016.git
    cd ntds_2016
    ```
 
-4. Non-Anaconda users. Install the basic packages from [PyPI]. If it fails, it
-   is probably because you need to install some native packages with your
-   package manager. Please read the error messages. Remember, Google is your
-   friend !
+3. Optionally, create a [virtual environment][venv]. 
    ```sh
-   pip3 install -r requirements.txt  # make install
+   pyvenv /path/to/new/virtual/env
+   . /path/to/new/virtual/env/bin/activate
+   ```
+   > A virtual environment allows you to install a different set of packages for
+   > each of your Python project. Each project thus stays cleanly separated from
+   > each other. It is a good practice but by no means necessary. You can read
+   > more about virtual environments on this [blog post][venv_blog]. Anaconda
+   > users, see [here][conda_venv].
+
+4. Install the packages we'll use from [PyPI], the Python Package Index.
+   ```sh
+   pip install -r requirements.txt  # or make install
    ```
 
+   * If it fails, it is probably because you need to install some native
+	 packages with your package manager. Please read the error messages and
+	 remember, Google is your friend !
+
+   * Depending on your installation, `pip` may refer to Python 2 (you can
+	 verify with `pip -V`). In that case, use `pip3` instead of `pip`.
+
+   * Anaconda users can also install packages with `conda install packname`.
+	 See [here][conda_install] for your options.
+
 5. Verify that you have a working installation by running a simple test.
+   Again, you may need to call `python3`.
    ```sh
-   python3 check_install.py  # make test
+   python check_install.py  # or make test
    ```
 
 6. Open the jupyter web interface and play with the notebooks !
@@ -73,5 +86,9 @@ presented in class.
 
 [Homebrew]: http://brew.sh
 [Anaconda]: https://www.continuum.io/downloads#windows
+[conda_install]: http://stackoverflow.com/a/18640601/3734066
+[conda_venv]: http://conda.pydata.org/docs/using/envs.html
 [venv]: https://docs.python.org/3/library/venv.html
+[venv_blog]: https://realpython.com/blog/python/python-virtual-environments-a-primer/
 [PyPI]: https://pypi.python.org
+[git]: https://git-scm.com/downloads
