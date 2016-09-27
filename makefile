@@ -1,5 +1,5 @@
-NB  = $(wildcard toolkit/*.ipynb)
-NB += $(wildcard algorithms/*.ipynb)
+NB  = $(sort $(wildcard toolkit/*.ipynb))
+NB += $(sort $(wildcard algorithms/*.ipynb))
 
 all: test run
 
