@@ -8,11 +8,11 @@ run:
 	jupyter nbconvert --inplace --execute --ExecutePreprocessor.timeout=120 $(NB)
 
 test:
-	python3 check_install.py
+	python check_install.py
 
 install:
-	pip3 install --upgrade pip
-	pip3 install -r requirements.txt
+	pip install --upgrade pip
+	pip install -r requirements.txt
 
 clean:
 	jupyter nbconvert --inplace --ClearOutputPreprocessor.enabled=True $(NB)
