@@ -1,0 +1,36 @@
+# Configuration file for automatic testing at travis-ci.org
+
+sudo: false
+
+language: python
+
+python:
+  - "3.4"
+  - "3.5"
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+      - llvm-toolchain-precise-3.8
+    packages:
+      - gfortran            # scipy
+      - libatlas-base-dev   # scipy
+      - libhdf5-serial-dev  # tables
+      - llvm-3.8-dev        # numba / llvmlite
+      - gcc-6               # C11
+      - g++-6               # C++11 for numba / llvmlite
+
+env:
+  global:
+    - LLVM_CONFIG="llvm-config-3.8"
+    - CC="gcc-6"
+    - CXX="g++-6"
+
+install:
+  - pip install --upgrade pip
+  - pip install --upgrade numpy
+  - pip install -r requirements.txt
+
+script:
+  - make
