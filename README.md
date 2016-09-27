@@ -36,7 +36,9 @@ presented in class.
 1. Install Python.
 	* Windows: we recommend to install [Anaconda]. Please install version 3.5.
 	  Most of the packages we'll use during the exercises are included in the
-	  distribution.
+	  distribution. An other option is the [Windows Subsystem for Linux][wsl],
+	  available on Windows 10, which allows you to install packages as if you
+	  were on Ubuntu.
 	* Mac: we recommend that you use the [Homebrew] package manager and install
 	  Python with `brew install python3`. You can also use [Anaconda].
 	* Linux: please use your package manager to install the latest Python 3.x.
@@ -79,12 +81,20 @@ presented in class.
    python check_install.py  # or make test
    ```
 
+   * If you are on Windows with Anaconda and get
+	 `WARNING (theano.configdefaults): g++ not detected!`, you may want to
+	 install [mingw-w64](http://mingw-w64.org) with `conda install mingw
+	 libpython`. Otherwise your Deep Learning models will run extremly slowly.
+	 This may however not work for Python 3.5, see this [GitHub
+	 issue][theano_windows_py35] for a workaround.
+
 6. Open the jupyter web interface and play with the notebooks !
    ```sh
    jupyter notebook
    ```
 
 [Homebrew]: http://brew.sh
+[wsl]: https://msdn.microsoft.com/en-us/commandline/wsl/about
 [Anaconda]: https://www.continuum.io/downloads#windows
 [conda_install]: http://stackoverflow.com/a/18640601/3734066
 [conda_venv]: http://conda.pydata.org/docs/using/envs.html
@@ -92,3 +102,4 @@ presented in class.
 [venv_blog]: https://realpython.com/blog/python/python-virtual-environments-a-primer/
 [PyPI]: https://pypi.python.org
 [git]: https://git-scm.com/downloads
+[theano_windows_py35]: https://github.com/Theano/Theano/issues/3376#issuecomment-235034897

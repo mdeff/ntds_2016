@@ -17,7 +17,7 @@ numba
 Cython
 
 keras
-#theano
+theano
 #tensorflow
 
 jupyter

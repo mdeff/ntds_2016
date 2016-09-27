@@ -2,6 +2,7 @@
 
 print('A Network Tour of Data Science: Python installation test')
 
+import os
 import sys
 major, minor = sys.version_info.major, sys.version_info.minor
 
@@ -27,8 +28,9 @@ try:
     import numba
     import Cython
 
+    os.environ['KERAS_BACKEND'] = 'theano'  # Easier for Windows users.
     import keras
-    #import theano
+    import theano
     #import tensorflow
 
     import jupyter
