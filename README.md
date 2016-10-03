@@ -5,8 +5,8 @@ This repository contains the exercises for the EPFL master course
 
 [epfl]: http://edu.epfl.ch/coursebook/en/a-network-tour-of-data-science-EE-558
 
-The **Data Science toolkit**, a set of [tools][toolkit] available to the Data
-Scientist.
+The **Data Scientist toolkit**, a set of [tools][toolkit], mostly in Python, to
+help during the Data Science process.
 
 1. [Introduction][00_intro].
 2. Data acquisition & exploration ([demo][01_demo], exercise). 
