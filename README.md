@@ -9,27 +9,28 @@ The **Data Scientist toolkit**, a set of [tools][toolkit], mostly in Python, to
 help during the Data Science process.
 
 1. [Introduction][00_intro].
-2. Data acquisition & exploration ([demo][01_demo], exercise). 
-3. Data exploitation (demo, exercise).
-4. High Performance Computing (demo, exercise).
-5. Cloud (demo, exercise).
-6. Graph tools (demo, exercise).
+2. Data acquisition & exploration: [demo][01_demo], [exercise][01_ex].
+3. Data exploitation: demo, exercise.
+4. High Performance Computing: demo, exercise.
+5. Cloud: demo, exercise.
+6. Graph tools: demo, exercise.
 
 **Machine Learning** (ML) & **Graph Signal Processing** (GSP) [algorithms].
 These exercises are designed so as to familiarize yourself with the algorithms
 presented in class.
 
-1. Graph Science (exercise).
-2. Clustering (exercise).
-3. Classification (exercise).
-4. Neural Networks (exercise).
-5. Signal Processing on Graphs (exercise).
-6. Sketching and other randomized approaches (exercise).
+1. Graph Science: exercise.
+2. Clustering: exercise.
+3. Classification: exercise.
+4. Neural Networks: exercise.
+5. Signal Processing on Graphs: exercise.
+6. Sketching and other randomized approaches: exercise.
 
 [algorithms]: http://nbviewer.jupyter.org/github/mdeff/ntds_2016/tree/with_outputs/algorithms
 [toolkit]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/tree/with_outputs/toolkit
 [00_intro]:   http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/00_introduction.ipynb
 [01_demo]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_demo_acquisition_exploration.ipynb
+[01_ex]:      http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_ex_acquisition_exploration.ipynb
 
 ## Installation
 
