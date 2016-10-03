@@ -15,6 +15,10 @@ try:
     import matplotlib
     import sklearn
 
+    import requests
+    import facebook
+    import tweepy
+
     import pandas
     import xlrd
     import xlwt

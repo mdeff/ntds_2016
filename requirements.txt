@@ -3,6 +3,10 @@ scipy
 matplotlib
 scikit-learn
 
+requests
+facebook-sdk
+tweepy
+
 pandas
 xlrd
 xlwt
