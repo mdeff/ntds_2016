@@ -103,3 +103,8 @@ presented in class.
 [PyPI]: https://pypi.python.org
 [git]: https://git-scm.com/downloads
 [theano_windows_py35]: https://github.com/Theano/Theano/issues/3376#issuecomment-235034897
+
+## License
+
+All codes and examples are released under the terms of the [MIT
+License](LICENSE.txt).
