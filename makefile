@@ -17,6 +17,7 @@ install:
 clean:
 	jupyter nbconvert --inplace --ClearOutputPreprocessor.enabled=True $(NB)
 	rm -f README.html
+	rm -f toolkit/subset.html
 	rm -fr data
 
 readme:
