@@ -9,7 +9,7 @@ The **Data Scientist toolkit**, a set of [tools][toolkit], mostly in Python, to
 help during the Data Science process.
 
 1. [Introduction][00_intro].
-2. Data acquisition & exploration: [demo][01_demo], [exercise][01_ex].
+2. Data acquisition & exploration: [demo][01_demo], [exercise][01_ex], [solution][01_sol].
 3. Data exploitation: demo, exercise.
 4. High Performance Computing: demo, exercise.
 5. Cloud: demo, exercise.
@@ -31,6 +31,7 @@ presented in class.
 [00_intro]:   http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/00_introduction.ipynb
 [01_demo]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_demo_acquisition_exploration.ipynb
 [01_ex]:      http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_ex_acquisition_exploration.ipynb
+[01_sol]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_sol_acquisition_exploration.ipynb
 
 ## Installation
 
