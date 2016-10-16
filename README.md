@@ -15,23 +15,27 @@ help during the Data Science process.
 5. Cloud: demo, exercise.
 6. Graph tools: demo, exercise.
 
+[toolkit]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/tree/with_outputs/toolkit
+[00_intro]:   http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/00_introduction.ipynb
+[01_demo]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_demo_acquisition_exploration.ipynb
+[01_ex]:      http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_ex_acquisition_exploration.ipynb
+[01_sol]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_sol_acquisition_exploration.ipynb
+
 **Machine Learning** (ML) & **Graph Signal Processing** (GSP) [algorithms].
 These exercises are designed so as to familiarize yourself with the algorithms
 presented in class.
 
-1. Graph Science: exercise.
-2. Clustering: exercise.
+1. Graph Science: [exercise][01_ex].
+2. Clustering: [exercise][02_ex], [assignment][02_ass].
 3. Classification: exercise.
 4. Neural Networks: exercise.
 5. Signal Processing on Graphs: exercise.
 6. Sketching and other randomized approaches: exercise.
 
 [algorithms]: http://nbviewer.jupyter.org/github/mdeff/ntds_2016/tree/with_outputs/algorithms
-[toolkit]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/tree/with_outputs/toolkit
-[00_intro]:   http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/00_introduction.ipynb
-[01_demo]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_demo_acquisition_exploration.ipynb
-[01_ex]:      http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_ex_acquisition_exploration.ipynb
-[01_sol]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_sol_acquisition_exploration.ipynb
+[01_ex]:      http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/01_ex_graph_science.ipynb
+[02_ex]:      http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_ex_clustering.ipynb
+[02_ass]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_ass_clustering.ipynb
 
 ## Installation
 
