@@ -1,9 +1,10 @@
 # A Network Tour of Data Science
 
-This repository contains the exercises for the EPFL master course
-[A Network Tour of Data Science][epfl]. There is two types of exercises.
+This repository contains the exercises for the EPFL master course [A Network
+Tour of Data Science][epfl] ([moodle]). There is two types of exercises.
 
 [epfl]: http://edu.epfl.ch/coursebook/en/a-network-tour-of-data-science-EE-558
+[moodle]: http://moodle.epfl.ch/course/view.php?id=15299
 
 The **Data Scientist toolkit**, a set of [tools][toolkit], mostly in Python, to
 help during the Data Science process.
