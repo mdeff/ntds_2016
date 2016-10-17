@@ -14,28 +14,27 @@ import time
 
 
 
-######################################
-# Function that reindexes W according to communities/classes
-######################################
-
-######################################
-# Usage: 
-#   [reindexed_W,reindexed_C] = reindex_W_with_C(W,C)
-#
-# Notations:
-#   n = nb_data
-#   nc = nb_communities
-#
-# Input variables:
-#   W = Adjacency matrix. Size = n x n.
-#   C = Classes used for reindexing W. Size = n x 1. Values in [0,1,...,nc-1].
-#
-# Output variables:
-#   reindexed_W = reindexed adjacency matrix. Size = n x n.
-#   reindexed_C = reindexed classes C. Size = n x 1. Values in [0,1,...,nc-1].
-######################################
 
 def reindex_W_with_classes(W,C):
+    """
+    Function that reindexes W according to communities/classes
+
+    Usage:
+      [reindexed_W,reindexed_C] = reindex_W_with_C(W,C)
+
+    Notations:
+      n = nb_data
+      nc = nb_communities
+
+    Input variables:
+      W = Adjacency matrix. Size = n x n.
+      C = Classes used for reindexing W. Size = n x 1. Values in [0,1,...,nc-1].
+
+    Output variables:
+      reindexed_W = reindexed adjacency matrix. Size = n x n.
+      reindexed_C = reindexed classes C. Size = n x 1. Values in [0,1,...,nc-1].
+    """
+
     n = C.shape[0] # nb of vertices
     nc = len(np.unique(C)) # nb of communities
     reindexing_mapping = np.zeros([n]) # mapping for reindexing W
@@ -58,27 +57,25 @@ def reindex_W_with_classes(W,C):
 
 
 
-######################################
-# Graph Laplacian Operator
-######################################
-
-######################################
-# Usages: 
-#   L = compute_graph_laplacian(W); # compute normalized graph Laplacian
-#   L = compute_graph_laplacian(W,False); # compute UNnormalized graph Laplacian
-#
-# Notations:
-#   n = nb_data
-#
-# Input variables:
-#   W = Adjacency matrix. Size = n x n.
-#
-# Output variables:
-#   L = Graph Laplacian. Size = n x n.
-######################################
 
 def graph_laplacian(W, normalized=True):
-    
+    """
+    Graph Laplacian Operator
+
+    Usages:
+      L = compute_graph_laplacian(W); # compute normalized graph Laplacian
+      L = compute_graph_laplacian(W,False); # compute UNnormalized graph Laplacian
+
+    Notations:
+      n = nb_data
+
+    Input variables:
+      W = Adjacency matrix. Size = n x n.
+
+    Output variables:
+      L = Graph Laplacian. Size = n x n.
+    """
+
     # Degree vector
     d = W.sum(axis=0)
 
@@ -99,27 +96,25 @@ def graph_laplacian(W, normalized=True):
 
 
 
-######################################
-# Graph Gradient Operator
-######################################
-
-######################################
-# Usage: 
-#   G = compute_graph_gradient(W); # compute normalized graph Laplacian
-#
-# Notations:
-#   n = number of nodes
-#   m = number of edges
-#
-# Input variables:
-#   W = Adjacency matrix. Size = n x n.
-#
-# Output variables:
-#   G = Graph Gradient Operator. Size = m x n.
-######################################
 
 
 def graph_gradient(W):
+    """
+    Graph Gradient Operator
+
+    Usage:
+      G = compute_graph_gradient(W); # compute normalized graph Laplacian
+
+    Notations:
+      n = number of nodes
+      m = number of edges
+
+    Input variables:
+      W = Adjacency matrix. Size = n x n.
+
+    Output variables:
+      G = Graph Gradient Operator. Size = m x n.
+    """
 
     W = W.todense()
     n = W.shape[0] # number of nodes
@@ -142,33 +137,31 @@ def graph_gradient(W):
 
 
 
-######################################
-# Visualization technique:
-#   Belkin-Niyogi, Laplacian eigenmaps for dimensionality reduction and data representation, 2003
-######################################
-
-######################################
-# Usage: 
-#   X,Y,Z = nldr_visualization(W)
-#
-# Notations:
-#   n = nb_data
-#
-# Input variables:
-#   W = Adjacency matrix. Size = n x n.
-#
-# Output variables:
-#   X = 1st data coordinates in low-dim manifold. Size n x 1.
-#   Y = 2nd data coordinates in low-dim manifold. Size n x 1.
-#   Z = 3rd data coordinates in low-dim manifold. Size n x 1.
-######################################
 
 def sortEVD(lamb, U):
     idx = lamb.argsort() # increasing order
     return lamb[idx], U[:,idx]
 
 def nldr_visualization(W):
-    
+    """
+    Visualization technique:
+      Belkin-Niyogi, Laplacian eigenmaps for dimensionality reduction and data representation, 2003
+
+    Usage:
+      X,Y,Z = nldr_visualization(W)
+
+    Notations:
+      n = nb_data
+
+    Input variables:
+      W = Adjacency matrix. Size = n x n.
+
+    Output variables:
+      X = 1st data coordinates in low-dim manifold. Size n x 1.
+      Y = 2nd data coordinates in low-dim manifold. Size n x 1.
+      Z = 3rd data coordinates in low-dim manifold. Size n x 1.
+    """
+
     # Compute normalized graph Laplacian
     L = graph_laplacian(W)
     
@@ -192,29 +185,28 @@ def nldr_visualization(W):
 
 
 
-######################################
-# Clustering accuracy can be defined with the purity measure, defined here:
-#   Yang-Hao-Dikmen-Chen-Oja, Clustering by nonnegative matrix factorization 
-#   using graph random walk, 2012.
-######################################
-
-######################################
-# Usages: 
-#   accuracy = compute_clustering_accuracy(C_computed,C_grndtruth,R)
-#
-# Notations:
-#   n = nb_data
-#
-# Input variables:
-#   C_computed = Computed clusters. Size = n x 1. Values in [0,1,...,R-1].
-#   C_grndtruth = Ground truth clusters. Size = n x 1. Values in [0,1,...,R-1].
-#   R = Number of clusters.
-#
-# Output variables:
-#   accuracy = Clustering accuracy of computed clusters.
-######################################
 
 def compute_purity(C_computed,C_grndtruth,R):
+    """
+    Clustering accuracy can be defined with the purity measure, defined here:
+      Yang-Hao-Dikmen-Chen-Oja, Clustering by nonnegative matrix factorization
+      using graph random walk, 2012.
+
+    Usages:
+      accuracy = compute_clustering_accuracy(C_computed,C_grndtruth,R)
+
+    Notations:
+      n = nb_data
+
+    Input variables:
+      C_computed = Computed clusters. Size = n x 1. Values in [0,1,...,R-1].
+      C_grndtruth = Ground truth clusters. Size = n x 1. Values in [0,1,...,R-1].
+      R = Number of clusters.
+
+    Output variables:
+      accuracy = Clustering accuracy of computed clusters.
+    """
+
     N = C_grndtruth.size
     nb_of_dominant_points_in_class = np.zeros((R, 1))
     w = defaultdict(list)
@@ -237,30 +229,28 @@ def compute_purity(C_computed,C_grndtruth,R):
 
 
 
-######################################
-# Graph spectral clustering technique NCut:
-#   Yu-Shi, Multiclass spectral clustering, 2003 
-#   Code available here: http://www.cis.upenn.edu/~jshi/software
-######################################
-
-######################################
-# Usages: 
-#   C,acc = compute_ncut(W,Cgt,R)
-#
-# Notations:
-#   n = nb_data
-#
-# Input variables:
-#   W = Adjacency matrix. Size = n x n.
-#   R = Number of clusters.
-#   Cgt = Ground truth clusters. Size = n x 1. Values in [0,1,...,R-1].
-#
-# Output variables:
-#   C = NCut solution. Size = n x 1. Values in [0,1,...,R-1].
-#   acc = Accuracy of NCut solution.
-######################################
 
 def compute_ncut(W, Cgt, R):
+    """
+    Graph spectral clustering technique NCut:
+      Yu-Shi, Multiclass spectral clustering, 2003
+      Code available here: http://www.cis.upenn.edu/~jshi/software
+
+    Usages:
+      C,acc = compute_ncut(W,Cgt,R)
+
+    Notations:
+      n = nb_data
+
+    Input variables:
+      W = Adjacency matrix. Size = n x n.
+      R = Number of clusters.
+      Cgt = Ground truth clusters. Size = n x 1. Values in [0,1,...,R-1].
+
+    Output variables:
+      C = NCut solution. Size = n x 1. Values in [0,1,...,R-1].
+      acc = Accuracy of NCut solution.
+    """
 
     # Apply ncut
     eigen_val, eigen_vec = ncut.ncut( W, R )
@@ -281,49 +271,50 @@ def compute_ncut(W, Cgt, R):
 
 
 
-# ######################################
-# # Pre-process data (if needed)
-# ######################################
-# 
-# n = nb_data
-# d = data_dimensionality
-#
-# # Center the data, i.e. x_i <- x_i - mean({x_i}), size(X) = n x d
-# X = bsxfun(@minus, X, mean(X,1));
-# 
-# # Normalize the variance of the data, i.e. x_i <- x_i / var({x_i}), size(X) = n x d
-# X = bsxfun(@rdivide, X, sqrt(sum(X.^2,1))+eps);
-# 
-# # Projection onto the sphere, i.e. ||x_i||_2=1, size(X) = n x d
-# X = bsxfun(@rdivide, X, sqrt(sum(X.^2,2))+eps);
-#
-# # Normalize the data value between [0,1]:
-# X = (X - min(X(:)))/ (max(X(:)) - min(X(:)));
-# # or between [-1,1]:
-# X = 2* ( (X - min(X(:)))/ (max(X(:)) - min(X(:))) - 0.5 );
 
 
-######################################
-# Usages: 
-# (i)   W = construct_knn_graph(X,k,'euclidean')
-# (ii)  W = construct_knn_graph(X,k,'cosine')
-# (iii) W = construct_knn_graph(X,k,'cosine_binary')
-#
-# Notations:
-#   n = nb_data
-#   d = data_dimensionality
-#
-# Input variables:
-#   X = Data matrix. Size = n x d.
-#   k = Number of nearest neaighbors. 
-#   dist = Type of distances: 'euclidean' or 'cosine'
-#
-# Output variables:
-#   W = Adjacency matrix. Size = n x n.
-######################################
 
 def construct_knn_graph(X,k,dist):
-    
+    """
+    Usages:
+    (i)   W = construct_knn_graph(X,k,'euclidean')
+    (ii)  W = construct_knn_graph(X,k,'cosine')
+    (iii) W = construct_knn_graph(X,k,'cosine_binary')
+
+    Notations:
+      n = nb_data
+      d = data_dimensionality
+
+    Input variables:
+      X = Data matrix. Size = n x d.
+      k = Number of nearest neaighbors.
+      dist = Type of distances: 'euclidean' or 'cosine'
+
+    Output variables:
+      W = Adjacency matrix. Size = n x n.
+
+    Pre-process data (if needed)
+    ----------------------------
+
+    >>> n = nb_data
+    >>> d = data_dimensionality
+
+    Center the data, i.e. x_i <- x_i - mean({x_i}), size(X) = n x d
+    >>> X = bsxfun(@minus, X, mean(X,1));
+
+    Normalize the variance of the data, i.e. x_i <- x_i / var({x_i}), size(X) = n x d
+    >>> X = bsxfun(@rdivide, X, sqrt(sum(X.^2,1))+eps);
+
+    Projection onto the sphere, i.e. ||x_i||_2=1, size(X) = n x d
+    >>> X = bsxfun(@rdivide, X, sqrt(sum(X.^2,2))+eps);
+
+    Normalize the data value between [0,1]:
+    >>> X = (X - min(X(:)))/ (max(X(:)) - min(X(:)));
+
+    or between [-1,1]:
+    >>> X = 2* ( (X - min(X(:)))/ (max(X(:)) - min(X(:))) - 0.5 );
+    """
+
     n = X.shape[0]    
     
     ######################################
@@ -503,30 +494,29 @@ def construct_knn_graph(X,k,dist):
 
 
 
-######################################
-# Usages: 
-#   [PC,PD,EnPD] = compute_pca(X,nb_pca)
-#
-# Notations:
-#   n = nb_data
-#   d = data_dimensionality
-#
-# Input variables:
-#   X = Data matrix. Size = n x d.
-#   nb_pca = Number of principal components. 
-#
-# Output variables:
-#   PC = Principal components. Size = n x nb_pca.
-#   PD = Principal directions. Size = d x nb_pca.
-#   EnPD = Energy/variance of the principal directions. Size = np_pca x 1.
-######################################
-
 def sortPCA(lamb, U):
     idx = lamb.argsort()[::-1] # decreasing order
     return lamb[idx], U[:,idx]
 
 def compute_pca(X,nb_pca):
-    
+    """
+    Usages:
+      [PC,PD,EnPD] = compute_pca(X,nb_pca)
+
+    Notations:
+      n = nb_data
+      d = data_dimensionality
+
+    Input variables:
+      X = Data matrix. Size = n x d.
+      nb_pca = Number of principal components.
+
+    Output variables:
+      PC = Principal components. Size = n x nb_pca.
+      PD = Principal directions. Size = d x nb_pca.
+      EnPD = Energy/variance of the principal directions. Size = np_pca x 1.
+    """
+
     Xzc = X - np.mean(X,axis=0) # zero-centered data
     
     n,d = X.shape
@@ -566,27 +556,26 @@ def compute_pca(X,nb_pca):
 
 
 
-######################################
-# Usages: 
-#   [C_kmeans,En_kmeans] = compute_kernel_kmeans_EM(K,Ker,Theta,nb_trials)
-#
-# Note: Code based on Michael Chen (sth4nth@gmail.com)'s code
-#
-# Notations:
-#   n = nb_data
-#
-# Input variables:
-#   K = nb_clusters
-#   Ker = Kernel matrix. Size = n x n.
-#   Theta = Weight for each data term. Size = n x 1.
-#   nb_trials = Number of kmeans runs.
-#
-# Output variables:
-#   C_kmeans = Computed kmeans clusters. Size = n x 1.
-#   En_kmeans = Energy of the kmeans partition.
-######################################
-
 def compute_kernel_kmeans_EM(nc,Ker,Theta,nb_trials):
+    """
+    Usages:
+      [C_kmeans,En_kmeans] = compute_kernel_kmeans_EM(K,Ker,Theta,nb_trials)
+
+    Note: Code based on Michael Chen (sth4nth@gmail.com)'s code
+
+    Notations:
+      n = nb_data
+
+    Input variables:
+      K = nb_clusters
+      Ker = Kernel matrix. Size = n x n.
+      Theta = Weight for each data term. Size = n x 1.
+      nb_trials = Number of kmeans runs.
+
+    Output variables:
+      C_kmeans = Computed kmeans clusters. Size = n x 1.
+      En_kmeans = Energy of the kmeans partition.
+    """
 
     start = time.time()
     n = Ker.shape[0]
@@ -646,25 +635,24 @@ def compute_kernel_kmeans_EM(nc,Ker,Theta,nb_trials):
 
 
 
-######################################
-# Usages: 
-#   [C_kmeans,En_kmeans] = compute_kernel_kmeans_spectral(K,Ker,Theta,nb_trials)
-#
-# Notations:
-#   n = nb_data
-#
-# Input variables:
-#   K = nb_clusters
-#   Ker = Kernel matrix. Size = n x n.
-#   Theta = Weight for each data term. Size = n x 1.
-#   nb_trials = Number of standard kmeans runs.
-#
-# Output variables:
-#   C_kmeans = Computed kmeans clusters. Size = n x 1.
-#   En_kmeans = Energy of the kmeans partition.
-######################################
-
 def compute_kernel_kmeans_spectral(nc,Ker,Theta,nb_trials):
+    """
+    Usages:
+      [C_kmeans,En_kmeans] = compute_kernel_kmeans_spectral(K,Ker,Theta,nb_trials)
+
+    Notations:
+      n = nb_data
+
+    Input variables:
+      K = nb_clusters
+      Ker = Kernel matrix. Size = n x n.
+      Theta = Weight for each data term. Size = n x 1.
+      nb_trials = Number of standard kmeans runs.
+
+    Output variables:
+      C_kmeans = Computed kmeans clusters. Size = n x 1.
+      En_kmeans = Energy of the kmeans partition.
+    """
 
 
     start = time.time()
@@ -701,13 +689,13 @@ def compute_kernel_kmeans_spectral(nc,Ker,Theta,nb_trials):
 
 
 
-######################################################
-# Incremental Reseeding Algorithm for Clustering
-# Xavier Bresson, Huiyi Hu, Thomas Laurent, Arthur Szlam, James von Brecht
-# arXiv:1406.3837
-######################################################
 
 def plant_seeds(C, n, R, seeds_per_class):
+    """
+    Incremental Reseeding Algorithm for Clustering
+    Xavier Bresson, Huiyi Hu, Thomas Laurent, Arthur Szlam, James von Brecht
+    arXiv:1406.3837
+    """
 
     # Init
     F = np.zeros((n,R))
@@ -778,33 +766,31 @@ def compute_pcut(W,Cgt,R,speed=5.0,max_nb_iter=50,display=False):
 
 
 
-######################################
-# 
-# Usages: 
-# (i)    Ker = construct_kernel(X,'linear');              # Ker = <Xi,Xj>
-# (ii)   Ker = construct_kernel(X,'polynomial',[a,b,c]);  # Ker = ( a* <Xi,Xj> + b )^c
-# (iii)  Ker = construct_kernel(X,'gaussian');            # Ker = exp( -|Xi-Xj|_2^2 / a ), automatic a
-# (iv)   Ker = construct_kernel(X,'gaussian',a);          # Ker = exp( -|Xi-Xj|_2^2 / a ), given a
-# (v)    Ker = construct_kernel(X,'sigmoid',[a,b]);       # Ker = tanh( a* <Xi,Xj> + b )
-# (vi)   Ker = construct_kernel(X,'kNN_gaussian',k);
-# (vii)  Ker = construct_kernel(X,'kNN_cosine',k);
-# (viii) Ker = construct_kernel(X,'kNN_cosine_binary',k);
-#
-# Notations:
-#   n = nb_data
-#   d = data_dimensionality
-#   k = nb_nearest_neighbors
-#
-# Input variables:
-#   X = Data matrix. Size = n x d.
-#   type_kernel = Type of kernels: 'linear', 'polynomial', 'gaussian', 'sigmoid', 'kNN'.
-#
-# Output variables:
-#   Ker = Kernel matrix. Size = n x n.
-######################################
-
-def construct_kernel(X,type_kernel,parameters=None):
 #def construct_kernel(X,type_kernel):
+def construct_kernel(X,type_kernel,parameters=None):
+    """
+    Usages:
+    (i)    Ker = construct_kernel(X,'linear');              # Ker = <Xi,Xj>
+    (ii)   Ker = construct_kernel(X,'polynomial',[a,b,c]);  # Ker = ( a* <Xi,Xj> + b )^c
+    (iii)  Ker = construct_kernel(X,'gaussian');            # Ker = exp( -|Xi-Xj|_2^2 / a ), automatic a
+    (iv)   Ker = construct_kernel(X,'gaussian',a);          # Ker = exp( -|Xi-Xj|_2^2 / a ), given a
+    (v)    Ker = construct_kernel(X,'sigmoid',[a,b]);       # Ker = tanh( a* <Xi,Xj> + b )
+    (vi)   Ker = construct_kernel(X,'kNN_gaussian',k);
+    (vii)  Ker = construct_kernel(X,'kNN_cosine',k);
+    (viii) Ker = construct_kernel(X,'kNN_cosine_binary',k);
+
+    Notations:
+      n = nb_data
+      d = data_dimensionality
+      k = nb_nearest_neighbors
+
+    Input variables:
+      X = Data matrix. Size = n x d.
+      type_kernel = Type of kernels: 'linear', 'polynomial', 'gaussian', 'sigmoid', 'kNN'.
+
+    Output variables:
+      Ker = Kernel matrix. Size = n x n.
+      """
 
     start = time.time()
     n = X.shape[0]
@@ -1050,37 +1036,35 @@ def construct_kernel(X,type_kernel,parameters=None):
 
 
 
-######################################
-# 
-# Usage: 
-#   [alpha,f_test,C_test,acc_test] = compute_SVM(Xtrain,l,Xtest,Cgt_test,gammaG,type_graph,parameters_graph,gamma,type_kernel,parameters)
-#
-# Notations:
-#   n_train = nb of training data
-#   n_test = nb of test data
-#   d = data_dimensionality
-#   k = nb_nearest_neighbors
-#
-# Input variables:
-#   Xtrain = Training data matrix. Size = n_train x 1.
-#   l = Label vector. Size = n_train x 1. Values = +/-1.
-#   Xtest = Test data matrix. Size = n_test x 1.
-#   Cgt_test = Ground truth clusters of the test dataset. Size = n_test x 1.
-#   gammaG = Graph regularization paramater.
-#   type_graph = Type of graphs: 'no_graph', 'euclidean', 'euclidean_zelnik_perona', 'cosine', 'cosine_binary'
-#   gamma = SVM regularization paramater.
-#   type_kernel = Type of kernels: 'linear', 'polynomial', 'gaussian', 'sigmoid', 'kNN'.
-#   parameters = parameters used for Kernel construction
-#
-# Output variables:
-#   alpha = Coefficient vector of classification function. Size = n_train x 1.
-#   f_test = Continuous decision function. Size = n_test x 1.
-#   C_test = Binary decision function. Size = n_test x 1.
-#   acc_test = Accuracy of SVM classification on test dataset.
-######################################
 
 def compute_SVM(Xtrain,Cgt_train,l_train,type_svm,param_svm=None,Xtest=None,Cgt_test=None,plot=None,type_graph=None,param_graph=None):
+    """
+    Usage:
+      [alpha,f_test,C_test,acc_test] = compute_SVM(Xtrain,l,Xtest,Cgt_test,gammaG,type_graph,parameters_graph,gamma,type_kernel,parameters)
 
+    Notations:
+      n_train = nb of training data
+      n_test = nb of test data
+      d = data_dimensionality
+      k = nb_nearest_neighbors
+
+    Input variables:
+      Xtrain = Training data matrix. Size = n_train x 1.
+      l = Label vector. Size = n_train x 1. Values = +/-1.
+      Xtest = Test data matrix. Size = n_test x 1.
+      Cgt_test = Ground truth clusters of the test dataset. Size = n_test x 1.
+      gammaG = Graph regularization paramater.
+      type_graph = Type of graphs: 'no_graph', 'euclidean', 'euclidean_zelnik_perona', 'cosine', 'cosine_binary'
+      gamma = SVM regularization paramater.
+      type_kernel = Type of kernels: 'linear', 'polynomial', 'gaussian', 'sigmoid', 'kNN'.
+      parameters = parameters used for Kernel construction
+
+    Output variables:
+      alpha = Coefficient vector of classification function. Size = n_train x 1.
+      f_test = Continuous decision function. Size = n_test x 1.
+      C_test = Binary decision function. Size = n_test x 1.
+      acc_test = Accuracy of SVM classification on test dataset.
+    """
 
     # Parameters
     n = Xtrain.shape[0]
@@ -1267,11 +1251,8 @@ def compute_SVM(Xtrain,Cgt_train,l_train,type_svm,param_svm=None,Xtest=None,Cgt_
 
 
 
-######################################
-# Soft shrinkage operator
-######################################
-
 def shrink(x,mu):
+    """Soft shrinkage operator"""
 
     s = np.sqrt(x**2)
     ss = s - mu
@@ -1281,7 +1262,3 @@ def shrink(x,mu):
     res = ss* x
 
     return res
-
-
-
-
