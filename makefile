@@ -3,25 +3,28 @@ NB += $(sort $(wildcard algorithms/*.ipynb))
 
 all: test run
 
-run:
-	grip README.md --export README.html
-	jupyter nbconvert --inplace --execute --ExecutePreprocessor.timeout=-1 $(NB)
-
 test:
 	python check_install.py
 
-install:
-	pip install --upgrade pip
-	pip install -r requirements.txt
+run: $(NB)
+	grip README.md --export README.html
+
+$(NB):
+	jupyter nbconvert --inplace --execute --ExecutePreprocessor.timeout=-1 $@
 
 clean:
 	jupyter nbconvert --inplace --ClearOutputPreprocessor.enabled=True $(NB)
 	rm -f README.html
 	rm -f toolkit/subset.html
+
+cleanall: clean
 	rm -fr data
+
+install:
+	pip install --upgrade pip
+	pip install -r requirements.txt
 
 readme:
 	grip README.md
-	#pandoc -f markdown_github README.md -s -o README.html
 
-.PHONY: all run test install clean readme
+.PHONY: all test run $(NB) clean install readme
