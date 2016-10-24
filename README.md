@@ -11,7 +11,7 @@ help during the Data Science process.
 
 1. [Introduction][00_intro].
 2. Data acquisition & exploration: [demo][01_demo], [exercise][01_ex], [solution][01_sol].
-3. Data exploitation: demo, exercise.
+3. Data exploitation: [demo][02_demo], [exercise][02_ex].
 4. High Performance Computing: demo, exercise.
 5. Cloud: demo, exercise.
 6. Graph tools: demo, exercise.
@@ -21,6 +21,8 @@ help during the Data Science process.
 [01_demo]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_demo_acquisition_exploration.ipynb
 [01_ex]:      http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_ex_acquisition_exploration.ipynb
 [01_sol]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_sol_acquisition_exploration.ipynb
+[02_demo]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_demo_exploitation.ipynb
+[02_ex]:      http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_ex_exploitation.ipynb
 
 **Machine Learning** (ML) & **Graph Signal Processing** (GSP) [algorithms].
 These exercises are designed so as to familiarize yourself with the algorithms
