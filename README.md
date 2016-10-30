@@ -117,6 +117,22 @@ presented in class.
 [git]: https://git-scm.com/downloads
 [theano_windows_py35]: https://github.com/Theano/Theano/issues/3376#issuecomment-235034897
 
+### Docker (TensorFlow on Windows)
+
+[Docker](https://www.docker.com) is needed to install TensorFlow on Windows.
+Docker is a virtualization method which helps to deploy applications inside
+[containers]. You can think of them as lightweight virtual machines. [Install
+docker][docker_win] first, then open a terminal and run the following command
+to setup and run a tensorflow container:
+```sh
+docker run -it -p 8871:8888 -p 6011:6006 -v /path/to/exercises:/notebooks --name tf erroneousboat/tensorflow-python3-jupyter
+```
+You can now access the container's Jupyter notebook at <http://localhost:8871>.
+Next time you can start the container with `docker start -i tf`.
+
+[containers]: https://en.wikipedia.org/wiki/Operating-system-level_virtualization
+[docker_win]: https://docs.docker.com/engine/installation/windows/
+
 ## License
 
 All codes and examples are released under the terms of the [MIT
