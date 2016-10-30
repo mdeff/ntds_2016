@@ -35,7 +35,7 @@ try:
     os.environ['KERAS_BACKEND'] = 'theano'  # Easier for Windows users.
     import keras
     import theano
-    #import tensorflow
+    import tensorflow
 
     import jupyter
     import IPython, ipykernel
