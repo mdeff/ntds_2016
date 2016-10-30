@@ -30,7 +30,7 @@ presented in class.
 
 1. Graph Science: [exercise][a01_ex], [solution][a01_sol].
 2. Clustering: [exercise][a02_ex], [solution][a02_sol], [assignment][a02_ass].
-3. Classification: exercise.
+3. Classification: [exercise][a03_ex], [exercise TensorFlow][a04_ex].
 4. Neural Networks: exercise.
 5. Signal Processing on Graphs: exercise.
 6. Sketching and other randomized approaches: exercise.
@@ -41,6 +41,8 @@ presented in class.
 [a02_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_ex_clustering.ipynb
 [a02_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_sol_clustering.ipynb
 [a02_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_ass_clustering.ipynb
+[a03_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/03_ex_classification.ipynb
+[a04_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/04_ex_tensorflow.ipynb
 
 ## Installation
 
