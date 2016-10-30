@@ -22,7 +22,9 @@ Cython
 
 keras
 theano
-#tensorflow
+# tensorflow: see https://www.tensorflow.org/versions/master/get_started/os_setup.html
+# for the correct target. Something like below.
+# https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc1-cp35-cp35m-linux_x86_64.whl
 
 jupyter
 ipython
