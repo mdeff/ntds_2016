@@ -28,8 +28,8 @@ help during the Data Science process.
 These exercises are designed so as to familiarize yourself with the algorithms
 presented in class.
 
-1. Graph Science: [exercise][a01_ex].
-2. Clustering: [exercise][a02_ex], [assignment][a02_ass].
+1. Graph Science: [exercise][a01_ex], [solution][a01_sol].
+2. Clustering: [exercise][a02_ex], [solution][a02_sol], [assignment][a02_ass].
 3. Classification: exercise.
 4. Neural Networks: exercise.
 5. Signal Processing on Graphs: exercise.
@@ -37,7 +37,9 @@ presented in class.
 
 [algorithms]: http://nbviewer.jupyter.org/github/mdeff/ntds_2016/tree/with_outputs/algorithms
 [a01_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/01_ex_graph_science.ipynb
+[a01_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/01_sol_graph_science.ipynb
 [a02_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_ex_clustering.ipynb
+[a02_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_sol_clustering.ipynb
 [a02_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_ass_clustering.ipynb
 
 ## Installation
