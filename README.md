@@ -1,7 +1,8 @@
 # A Network Tour of Data Science
 
-This repository contains the exercises for the EPFL master course [A Network
-Tour of Data Science][epfl] ([moodle]). There is two types of exercises.
+This repository contains the exercises for the EPFL master course [EE-558
+A Network Tour of Data Science][epfl] ([moodle]). There is two types of
+exercises.
 
 [epfl]: http://edu.epfl.ch/coursebook/en/a-network-tour-of-data-science-EE-558
 [moodle]: http://moodle.epfl.ch/course/view.php?id=15299
@@ -11,8 +12,8 @@ help during the Data Science process.
 
 1. [Introduction][t00_intro].
 2. Data acquisition & exploration: [demo][t01_demo], [exercise][t01_ex], [solution][t01_sol].
-3. Data exploitation: [demo][t02_demo], [exercise][t02_ex].
-4. High Performance Computing: demo, exercise.
+3. Data exploitation: [demo][t02_demo], [exercise][t02_ex], [solution][t02_ex].
+4. High Performance Computing: [exercise][t03_ex], solution.
 5. Cloud: demo, exercise.
 6. Graph tools: demo, exercise.
 
@@ -23,13 +24,15 @@ help during the Data Science process.
 [t01_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_sol_acquisition_exploration.ipynb
 [t02_demo]:   http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/02_demo_exploitation.ipynb
 [t02_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/02_ex_exploitation.ipynb
+[t02_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/02_sol_exploitation.ipynb
+[t03_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/03_ex_hpc.ipynb
 
 **Machine Learning** (ML) & **Graph Signal Processing** (GSP) [algorithms].
 These exercises are designed so as to familiarize yourself with the algorithms
 presented in class.
 
 1. Graph Science: [exercise][a01_ex], [solution][a01_sol].
-2. Clustering: [exercise][a02_ex], [solution][a02_sol], [assignment][a02_ass].
+2. Clustering: [exercise][a02_ex], [solution][a02_sol], [assignment][a02_ass], [solution][a02_sass].
 3. Classification: [exercise][a03_ex], [exercise TensorFlow][a04_ex].
 4. Neural Networks: exercise.
 5. Signal Processing on Graphs: exercise.
@@ -41,6 +44,7 @@ presented in class.
 [a02_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_ex_clustering.ipynb
 [a02_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_sol_clustering.ipynb
 [a02_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_ass_clustering.ipynb
+[a02_sass]:   http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_sol_assignment.ipynb
 [a03_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/03_ex_classification.ipynb
 [a04_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/04_ex_tensorflow.ipynb
 
@@ -116,6 +120,22 @@ presented in class.
 [PyPI]: https://pypi.python.org
 [git]: https://git-scm.com/downloads
 [theano_windows_py35]: https://github.com/Theano/Theano/issues/3376#issuecomment-235034897
+
+### Docker (TensorFlow on Windows)
+
+[Docker](https://www.docker.com) is needed to install TensorFlow on Windows.
+Docker is a virtualization method which helps to deploy applications inside
+[containers]. You can think of them as lightweight virtual machines. [Install
+docker][docker_win] first, then open a terminal and run the following command
+to setup and run a tensorflow container:
+```sh
+docker run -it -p 8871:8888 -p 6011:6006 -v /path/to/exercises:/notebooks --name tf erroneousboat/tensorflow-python3-jupyter
+```
+You can now access the container's Jupyter notebook at <http://localhost:8871>.
+Next time you can start the container with `docker start -i tf`.
+
+[containers]: https://en.wikipedia.org/wiki/Operating-system-level_virtualization
+[docker_win]: https://docs.docker.com/engine/installation/windows/
 
 ## License
 
