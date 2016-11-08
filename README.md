@@ -12,7 +12,7 @@ help during the Data Science process.
 
 1. [Introduction][t00_intro].
 2. Data acquisition & exploration: [demo][t01_demo], [exercise][t01_ex], [solution][t01_sol].
-3. Data exploitation: [demo][t02_demo], [exercise][t02_ex], [solution][t02_ex].
+3. Data exploitation: [demo][t02_demo], [exercise][t02_ex], [solution][t02_sol].
 4. High Performance Computing: [exercise][t03_ex], solution.
 5. Cloud: demo, exercise.
 6. Graph tools: demo, exercise.
