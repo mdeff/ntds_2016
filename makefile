@@ -1,7 +1,7 @@
 NB  = $(sort $(wildcard toolkit/*.ipynb))
 NB += $(sort $(wildcard algorithms/*.ipynb))
 
-all: test run
+all: test run project
 
 test:
 	python check_install.py
@@ -16,9 +16,11 @@ clean:
 	jupyter nbconvert --inplace --ClearOutputPreprocessor.enabled=True $(NB)
 	rm -f README.html
 	rm -f toolkit/subset.html
+	$(MAKE) -C project clean
 
 cleanall: clean
 	rm -fr data
+	$(MAKE) -C project cleanall
 
 install:
 	pip install --upgrade pip
@@ -27,4 +29,7 @@ install:
 readme:
 	grip README.md
 
-.PHONY: all test run $(NB) clean install readme
+project:
+	$(MAKE) -C project
+
+.PHONY: all test run $(NB) clean install readme project

@@ -49,6 +49,11 @@ presented in class.
 [a04_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/04_ex_tensorflow.ipynb
 [a05_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/05_ass_convnet.ipynb
 
+The final evaluation is a **class project**, taking place at the end of the
+semester. Read more about it in the [project description][desc].
+
+[desc]: http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/project/description.pdf
+
 ## Installation
 
 1. Install Python.
