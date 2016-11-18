@@ -56,7 +56,7 @@ semester. Read more about it in the [project description][desc].
 
 [desc]: http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/project/description.pdf
 
-## 1 Docker
+## Docker
 
 The easiest way to play with the code is to run it inside a [docker] container,
 a [lightweight virtualization method][virt].
@@ -103,10 +103,10 @@ packages, you'll need to install them into the container.
    apt-get install myotherpackage
    ```
 
-## 2 Manual installation
+## Manual installation
 
-> Warning: this may be problematic for Windows users, as TensorFlow does not
-> support Windows yet.
+**Warning**: this may be problematic for Windows users, as TensorFlow does not
+support Windows yet.
 
 1. Install Python.
 	* Windows: we recommend to install [Anaconda]. Please install version 3.5.
