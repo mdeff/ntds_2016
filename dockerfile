@@ -15,15 +15,16 @@ RUN echo "deb http://apt.llvm.org/jessie/ llvm-toolchain-jessie-3.8 main" >> /et
 
 ENV LLVM_CONFIG=llvm-config-3.8
 
-RUN git clone --depth=1 https://github.com/mdeff/ntds_2016.git /data
 WORKDIR /data
+RUN git clone --depth=1 https://github.com/mdeff/ntds_2016.git repo && \
+    mkdir mount
 
 # Installing numpy first because of pip dependancy resolution bug.
 RUN pip --no-cache-dir install --upgrade pip && \
     pip --no-cache-dir install numpy && \
-    pip --no-cache-dir install -r requirements.txt && \
+    pip --no-cache-dir install -r repo/requirements.txt && \
     jupyter nbextension enable --py --sys-prefix widgetsnbextension && \
-    make test
+    make -C repo test
 
 # Add Tini.
 ADD https://github.com/krallin/tini/releases/download/v0.13.0/tini /usr/bin/tini
@@ -31,7 +32,7 @@ RUN chmod +x /usr/bin/tini
 ENTRYPOINT ["/usr/bin/tini", "--"]
 
 CMD ["jupyter", "notebook", "--no-browser", "--port=8888", "--ip=0.0.0.0", \
-     "--config=/data/jupyter_notebook_config.py"]
+     "--config=/data/repo/jupyter_notebook_config.py"]
 # Authentication: password and SSL certificate in config.
 
 EXPOSE 8888
