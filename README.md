@@ -64,24 +64,26 @@ a [lightweight virtualization method][virt].
 [docker]: https://www.docker.com
 [virt]: https://en.wikipedia.org/wiki/Operating-system-level_virtualization
 
-1. [Install Docker](https://docs.docker.com/engine/installation/) on your
-   Windows, Mac or Linux machine.
+1. [Install Docker][install] on your Windows, Mac or Linux machine.
 
-2. Run the image. The container is automatically updated from this git
-   repository.
+2. Run the [image], which is automatically updated from this git repository.
    ```sh
    docker pull mdeff/ntds_2016  # to update it
    docker run --rm -i -p 8871:8888 -v ~/:/data/mount mdeff/ntds_2016
    ```
 
 3. Access the container's Jupyter notebook at <http://localhost:8871>. Windows
-   and Mac users may need to redirect the port in VirtualBox, see
-   <http://stackoverflow.com/a/33642903/3734066>. There you'll find two folders:
+   and Mac users may need to [redirect the port in VirtualBox][redirect]. There
+   you'll find two folders:
    * `repo` contains a copy of this git repository. Nothing you modify in this
 	 folder is persistent. If you want to keep your modifications, use `File`,
 	 `Download as`, `Notebook` in the Jupyter interface.
    * `mount` contains a view of your home directory, from which you can
      persistently modify any of your files.
+
+[install]: https://docs.docker.com/engine/installation/
+[image]: https://hub.docker.com/r/mdeff/ntds_2016/
+[redirect]: https://stackoverflow.com/a/33642903/3734066
 
 ### Container modification
 
