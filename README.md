@@ -13,7 +13,7 @@ help during the Data Science process.
 1. [Introduction][t00_intro].
 2. Data acquisition & exploration: [demo][t01_demo], [exercise][t01_ex], [solution][t01_sol].
 3. Data exploitation: [demo][t02_demo], [exercise][t02_ex], [solution][t02_sol].
-4. High Performance Computing: [exercise][t03_ex], solution.
+4. High Performance Computing: [exercise][t03_ex], [solution][t03_sol].
 5. Data visualization: [exercise][t04_ex], solution.
 6. Graph tools: demo, exercise.
 7. Cloud: demo, exercise.
@@ -27,6 +27,7 @@ help during the Data Science process.
 [t02_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/02_ex_exploitation.ipynb
 [t02_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/02_sol_exploitation.ipynb
 [t03_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/03_ex_hpc.ipynb
+[t03_sol]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/03_sol_hpc.ipynb
 [t04_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/04_ex_visualization.ipynb
 
 **Machine Learning** (ML) & **Graph Signal Processing** (GSP) [algorithms].
