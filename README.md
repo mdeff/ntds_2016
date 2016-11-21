@@ -36,11 +36,12 @@ presented in class.
 
 1. Graph Science: [exercise][a01_ex], [solution][a01_sol].
 2. Clustering: [exercise][a02_ex], [solution][a02_sol], [assignment][a02_ass], [solution][a02_sass].
-3. Classification: [exercise][a03_ex], [solution][a03_sol], [exercise TensorFlow][a04_ex].
-4. Neural Networks: [assignment][a05_ass], solution.
-5. Recurrent Neural Networks: [assignment][a06_ass], solution.
-5. Signal Processing on Graphs: assignment, solution.
-6. Sketching and other randomized approaches: exercise.
+3. Classification: [exercise][a03_ex], [solution][a03_sol].
+4. TensorFlow: [exercise][a04_ex], [solution][a04_sol].
+5. Neural Networks: [assignment][a05_ass], solution.
+6. Recurrent Neural Networks: [assignment][a06_ass], solution.
+7. Signal Processing on Graphs: assignment, solution.
+8. Sketching and other randomized approaches: exercise.
 
 [algorithms]: http://nbviewer.jupyter.org/github/mdeff/ntds_2016/tree/with_outputs/algorithms
 [a01_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/01_ex_graph_science.ipynb
@@ -52,6 +53,7 @@ presented in class.
 [a03_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/03_ex_classification.ipynb
 [a03_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/03_sol_classification.ipynb
 [a04_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/04_ex_tensorflow.ipynb
+[a04_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/04_sol_tensorflow.ipynb
 [a05_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/05_ass_convnet.ipynb
 [a06_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/06_ass_recurrent_nn.ipynb
 
