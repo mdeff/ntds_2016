@@ -56,7 +56,59 @@ semester. Read more about it in the [project description][desc].
 
 [desc]: http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/project/description.pdf
 
-## Installation
+## Docker
+
+The easiest way to play with the code is to run it inside a [docker] container,
+a [lightweight virtualization method][virt].
+
+[docker]: https://www.docker.com
+[virt]: https://en.wikipedia.org/wiki/Operating-system-level_virtualization
+
+1. [Install Docker][install] on your Windows, Mac or Linux machine.
+
+2. Run the [image], which is automatically updated from this git repository.
+   ```sh
+   docker pull mdeff/ntds_2016  # to update it
+   docker run --rm -i -p 8871:8888 -v ~/:/data/mount mdeff/ntds_2016
+   ```
+
+3. Access the container's Jupyter notebook at <http://localhost:8871>. Windows
+   and Mac users may need to [redirect the port in VirtualBox][redirect]. There
+   you'll find two folders:
+   * `repo` contains a copy of this git repository. Nothing you modify in this
+	 folder is persistent. If you want to keep your modifications, use `File`,
+	 `Download as`, `Notebook` in the Jupyter interface.
+   * `mount` contains a view of your home directory, from which you can
+     persistently modify any of your files.
+
+[install]: https://docs.docker.com/engine/installation/
+[image]: https://hub.docker.com/r/mdeff/ntds_2016/
+[redirect]: https://stackoverflow.com/a/33642903/3734066
+
+### Container modification
+
+If you want to use it for your projects and need additional software or Python
+packages, you'll need to install them into the container.
+
+1. Create your named container.
+   ```sh
+   docker run -i -p 8871:8888 -v ~/:/data/mount --name myproject mdeff/ntds_2016
+   ```
+
+2. Once you stop it, you'll be able to start it again with `docker start
+   myproject`.
+
+3. In another terminal, install packages while the container is running.
+   ```sh
+   docker exec -i myproject /bin/bash
+   pip install mypackage
+   apt-get install myotherpackage
+   ```
+
+## Manual installation
+
+**Warning**: this may be problematic for Windows users, as TensorFlow does not
+support Windows yet.
 
 1. Install Python.
 	* Windows: we recommend to install [Anaconda]. Please install version 3.5.
@@ -92,7 +144,9 @@ semester. Read more about it in the [project description][desc].
 
    * If it fails, it is probably because you need to install some native
 	 packages with your package manager. Please read the error messages and
-	 remember, Google is your friend !
+	 remember, Google is your friend ! You may look at the
+	 [dockerfile](dockerfile) to get an idea of which setup is necessary on
+	 a Debian / Ubuntu system.
 
    * Depending on your installation, `pip` may refer to Python 2 (you can
 	 verify with `pip -V`). In that case, use `pip3` instead of `pip`.
@@ -128,22 +182,6 @@ semester. Read more about it in the [project description][desc].
 [PyPI]: https://pypi.python.org
 [git]: https://git-scm.com/downloads
 [theano_windows_py35]: https://github.com/Theano/Theano/issues/3376#issuecomment-235034897
-
-### Docker (TensorFlow on Windows)
-
-[Docker](https://www.docker.com) is needed to install TensorFlow on Windows.
-Docker is a virtualization method which helps to deploy applications inside
-[containers]. You can think of them as lightweight virtual machines. [Install
-docker][docker_win] first, then open a terminal and run the following command
-to setup and run a tensorflow container:
-```sh
-docker run -it -p 8871:8888 -p 6011:6006 -v /path/to/exercises:/notebooks --name tf erroneousboat/tensorflow-python3-jupyter
-```
-You can now access the container's Jupyter notebook at <http://localhost:8871>.
-Next time you can start the container with `docker start -i tf`.
-
-[containers]: https://en.wikipedia.org/wiki/Operating-system-level_virtualization
-[docker_win]: https://docs.docker.com/engine/installation/windows/
 
 ## License
 

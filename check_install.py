@@ -28,9 +28,13 @@ try:
     import statsmodels
     import sympy
     import autograd
-    import bokeh
     import numba
     import Cython
+
+    import seaborn
+    import ggplot
+    import altair
+    import bokeh
 
     os.environ['KERAS_BACKEND'] = 'theano'  # Easier for Windows users.
     import keras
