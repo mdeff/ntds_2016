@@ -16,9 +16,13 @@ sqlalchemy
 statsmodels
 sympy
 autograd
-bokeh
 numba
 Cython
+
+seaborn
+ggplot
+altair
+bokeh
 
 keras
 theano

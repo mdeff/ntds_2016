@@ -24,6 +24,7 @@ RUN pip --no-cache-dir install --upgrade pip && \
     pip --no-cache-dir install numpy && \
     pip --no-cache-dir install -r repo/requirements.txt && \
     jupyter nbextension enable --py --sys-prefix widgetsnbextension && \
+    jupyter nbextension enable --py --sys-prefix vega && \
     make -C repo test
 
 # Add Tini.
