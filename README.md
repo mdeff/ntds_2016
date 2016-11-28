@@ -14,7 +14,7 @@ help during the Data Science process.
 2. Data acquisition & exploration: [demo][t01_demo], [exercise][t01_ex], [solution][t01_sol].
 3. Data exploitation: [demo][t02_demo], [exercise][t02_ex], [solution][t02_sol].
 4. High Performance Computing: [exercise][t03_ex], [solution][t03_sol].
-5. Data visualization: [exercise][t04_ex], solution.
+5. Data visualization: [exercise][t04_ex], [solution][t04_sol].
 6. Graph tools: demo, exercise.
 7. Cloud: demo, exercise.
 
@@ -27,8 +27,9 @@ help during the Data Science process.
 [t02_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/02_ex_exploitation.ipynb
 [t02_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/02_sol_exploitation.ipynb
 [t03_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/03_ex_hpc.ipynb
-[t03_sol]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/03_sol_hpc.ipynb
+[t03_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/03_sol_hpc.ipynb
 [t04_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/04_ex_visualization.ipynb
+[t04_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/04_sol_visualization.ipynb
 
 **Machine Learning** (ML) & **Graph Signal Processing** (GSP) [algorithms].
 These exercises are designed so as to familiarize yourself with the algorithms
@@ -38,7 +39,7 @@ presented in class.
 2. Clustering: [exercise][a02_ex], [solution][a02_sol], [assignment][a02_ass], [solution][a02_sass].
 3. Classification: [exercise][a03_ex], [solution][a03_sol].
 4. TensorFlow: [exercise][a04_ex], [solution][a04_sol].
-5. Neural Networks: [assignment][a05_ass], solution.
+5. Neural Networks: [assignment][a05_ass], [solution][a05_sol].
 6. Recurrent Neural Networks: [assignment][a06_ass], solution.
 7. Graph Fourier Transform: [exercise][a07_ex], solution.
 8. Filtering Graph Signals: assignment, solution.
@@ -55,6 +56,7 @@ presented in class.
 [a04_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/04_ex_tensorflow.ipynb
 [a04_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/04_sol_tensorflow.ipynb
 [a05_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/05_ass_convnet.ipynb
+[a05_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/05_sol_convnet.ipynb
 [a06_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/06_ass_recurrent_nn.ipynb
 [a07_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/07_ex_graph_fourier.ipynb
 
