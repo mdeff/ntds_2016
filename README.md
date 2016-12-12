@@ -64,14 +64,14 @@ The final evaluation is a **class project**, taking place at the end of the
 semester. Read more about it in the [project description][desc]. Below are the
 projects proposed by the students.
 * [How Fake News Go Viral?](project/proposals/fake_news.pdf), Victor Kristof, William Trouleau
-* [Product Recommendation](project/proposals/product_recommendation), Berke Aral Sönmez, Alper Köse
+* [Product Recommendation](project/proposals/product_recommendation.pdf), Berke Aral Sönmez, Alper Köse
 * [Twitter User Gender Classification](project/proposals/twitter_gender.pdf), Gaétan Ramet, Benjamin Schloesing, Yuan Yao
 * [Youtube Fame Predictor](project/proposals/youtube_fame.pdf), Benoît Steinmann, Cyrille Rolland, Tanguy Rossel
 * [Emotion Recognition from Faces](project/proposals/emotion_recognition.pdf), Patryk Oleniuk, Carmen Galotta
 * [Airbnb New User Bookings](project/proposals/airbnb_booking.pdf), Pecoraro Cyril, Jaume Guillaume, Grisard Malo
 * [Predicting an Election from Tweets](project/proposals/election_prediction.pdf), Ercolani Chiara, Vorobiev Mikhail, Juillard Michaël
 * [Fisheries Monitoring](project/proposals/fisheries_monitoring.pdf), Damian Pascual Ortiz, Pablo Mainar Jovaní
-* [GeoTweet](project/proposals/twitter_geolocalization), Christian Abbet, Maxime Bonhenblust, Nicolas Masserey
+* [GeoTweet](project/proposals/twitter_geolocalization.pdf), Christian Abbet, Maxime Bonhenblust, Nicolas Masserey
 * [Estimating Hyper-Parameters for Compressed Sensing](project/proposals/compressed_sensing.pdf), Dimitris Perdios
 * [Global Warming](project/proposals/global_warming.pdf), Effrosyni Simou
 * [Daily News for Stock Market Prediction](project/proposals/stock_market.pdf), Jeroen Le Maire
