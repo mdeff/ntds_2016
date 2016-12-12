@@ -15,8 +15,6 @@ help during the Data Science process.
 3. Data exploitation: [demo][t02_demo], [exercise][t02_ex], [solution][t02_sol].
 4. High Performance Computing: [exercise][t03_ex], [solution][t03_sol].
 5. Data visualization: [exercise][t04_ex], [solution][t04_sol].
-6. Graph tools: demo, exercise.
-7. Cloud: demo, exercise.
 
 [toolkit]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/tree/with_outputs/toolkit
 [t00_intro]:  http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/00_introduction.ipynb
