@@ -15,8 +15,6 @@ help during the Data Science process.
 3. Data exploitation: [demo][t02_demo], [exercise][t02_ex], [solution][t02_sol].
 4. High Performance Computing: [exercise][t03_ex], [solution][t03_sol].
 5. Data visualization: [exercise][t04_ex], [solution][t04_sol].
-6. Graph tools: demo, exercise.
-7. Cloud: demo, exercise.
 
 [toolkit]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/tree/with_outputs/toolkit
 [t00_intro]:  http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/00_introduction.ipynb
@@ -40,7 +38,7 @@ presented in class.
 3. Classification: [exercise][a03_ex], [solution][a03_sol].
 4. TensorFlow: [exercise][a04_ex], [solution][a04_sol].
 5. Neural Networks: [assignment][a05_ass], [solution][a05_sol].
-6. Recurrent Neural Networks: [assignment][a06_ass], solution.
+6. Recurrent Neural Networks: [assignment][a06_ass], [solution][a06_sol].
 7. Graph Fourier Transform: [exercise][a07_ex], solution.
 8. Filtering Graph Signals: assignment, solution.
 
@@ -58,14 +56,34 @@ presented in class.
 [a05_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/05_ass_convnet.ipynb
 [a05_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/05_sol_convnet.ipynb
 [a06_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/06_ass_recurrent_nn.ipynb
+[a06_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/06_sol_recurrent_nn.ipynb
 [a07_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/07_ex_graph_fourier.ipynb
 
 The final evaluation is a **class project**, taking place at the end of the
-semester. Read more about it in the [project description][desc].
+semester. Read more about it in the [project description][desc]. Below are the
+projects proposed by the students.
+* [How Fake News Go Viral?](project/proposals/fake_news.pdf), Victor Kristof, William Trouleau
+* [Product Recommendation](project/proposals/product_recommendation.pdf), Berke Aral Sönmez, Alper Köse
+* [Twitter User Gender Classification](project/proposals/twitter_gender.pdf), Gaétan Ramet, Benjamin Schloesing, Yuan Yao
+* [Youtube Fame Predictor](project/proposals/youtube_fame.pdf), Benoît Steinmann, Cyrille Rolland, Tanguy Rossel
+* [Emotion Recognition from Faces](project/proposals/emotion_recognition.pdf), Patryk Oleniuk, Carmen Galotta
+* [Airbnb New User Bookings](project/proposals/airbnb_booking.pdf), Pecoraro Cyril, Jaume Guillaume, Grisard Malo
+* [Predicting an Election from Tweets](project/proposals/election_prediction.pdf), Ercolani Chiara, Vorobiev Mikhail, Juillard Michaël
+* [Fisheries Monitoring](project/proposals/fisheries_monitoring.pdf), Damian Pascual Ortiz, Pablo Mainar Jovaní
+* [GeoTweet](project/proposals/twitter_geolocalization.pdf), Christian Abbet, Maxime Bonhenblust, Nicolas Masserey
+* [Estimating Hyper-Parameters for Compressed Sensing](project/proposals/compressed_sensing.pdf), Dimitris Perdios
+* [Global Warming](project/proposals/global_warming.pdf), Effrosyni Simou
+* [Daily News for Stock Market Prediction](project/proposals/stock_market.pdf), Jeroen Le Maire
+* [Open Source Software Support](project/proposals/software_support.pdf), Pavlos Nikolopoulos, Matthaios Olma, Stefanos Skalistis
+* [El Nino](project/proposals/el_nino.pdf), Cotting Matthieu, Bonelli Alberto, Allani Mohamed
+* [Epileptic Seizures Prediction](project/proposals/epileptic_seizures.pdf), Sophie du Bois
+* [Sentiment Analysis](project/proposals/sentiment_analysis.pdf), Meryem Wehbe, Samuel Beuret, Valentine Santarelli
+* [Bike Sharing Demand](project/proposals/bike_sharing.pdf), Vincent Hardy
+* [Breast Cancer Classifcation](project/proposals/breast_cancer.pdf), Robin Demesmaeker
 
 [desc]: http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/project/description.pdf
 
-## Docker
+## Installation with Docker
 
 The easiest way to play with the code is to run it inside a [docker] container,
 a [lightweight virtualization method][virt].
