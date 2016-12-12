@@ -40,7 +40,7 @@ presented in class.
 3. Classification: [exercise][a03_ex], [solution][a03_sol].
 4. TensorFlow: [exercise][a04_ex], [solution][a04_sol].
 5. Neural Networks: [assignment][a05_ass], [solution][a05_sol].
-6. Recurrent Neural Networks: [assignment][a06_ass], solution.
+6. Recurrent Neural Networks: [assignment][a06_ass], [solution][a06_sol].
 7. Graph Fourier Transform: [exercise][a07_ex], solution.
 8. Filtering Graph Signals: assignment, solution.
 
@@ -58,6 +58,7 @@ presented in class.
 [a05_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/05_ass_convnet.ipynb
 [a05_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/05_sol_convnet.ipynb
 [a06_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/06_ass_recurrent_nn.ipynb
+[a06_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/06_sol_recurrent_nn.ipynb
 [a07_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/07_ex_graph_fourier.ipynb
 
 The final evaluation is a **class project**, taking place at the end of the
