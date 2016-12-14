@@ -84,7 +84,7 @@ projects proposed by the students.
 
 [desc]: http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/project/description.pdf
 
-## Installation with Docker
+## Installation with Docker [![](https://images.microbadger.com/badges/image/mdeff/ntds_2016.svg)][image]
 
 The easiest way to play with the code is to run it inside a [docker] container,
 a [lightweight virtualization method][virt].
