@@ -11,6 +11,10 @@ try:
 except FileNotFoundError:
     pass
 
+# No token-based authentication. This notebook will be protected by a password
+# if made publicly available.
+c.NotebookApp.token = ''
+
 # Self-signed or recognized SSL certificate.
 # openssl req -x509 -nodes -days 20 -newkey rsa:1024 -keyout privkey.pem -out cert.pem
 # sudo letsencrypt certonly --standalone -d 54.93.112.97.xip.io
