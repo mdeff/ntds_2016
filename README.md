@@ -100,14 +100,17 @@ a [lightweight virtualization method][virt].
    docker run --rm -i -p 8871:8888 -v ~/:/data/mount mdeff/ntds_2016
    ```
 
-3. Access the container's Jupyter notebook at <http://localhost:8871>. Windows
-   and Mac users may need to [redirect the port in VirtualBox][redirect]. There
+3. Access the container's Jupyter notebook at <http://localhost:8871>. There
    you'll find two folders:
+
    * `repo` contains a copy of this git repository. Nothing you modify in this
 	 folder is persistent. If you want to keep your modifications, use `File`,
 	 `Download as`, `Notebook` in the Jupyter interface.
    * `mount` contains a view of your home directory, from which you can
      persistently modify any of your files.
+
+   Windows and Mac users may need to [redirect the port in
+   VirtualBox][redirect].
 
 [install]: https://docs.docker.com/engine/installation/
 [image]: https://hub.docker.com/r/mdeff/ntds_2016/
