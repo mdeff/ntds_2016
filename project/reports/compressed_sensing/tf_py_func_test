@@ -1,0 +1,93 @@
+import tensorflow as tf
+import numpy as np
+
+
+def my_func(x):
+  # x will be a numpy array with the contents of the placeholder below
+  return np.sinh(x)
+
+# inp = tf.placeholder(tf.float32)
+# y = tf.py_func(my_func, [inp], tf.float32)
+
+
+def my_func_dict(condition, vector):
+    # #  b'abcde'.decode('utf-8') could be useful
+    if condition == b'test_str_inp':
+        # out = [np.float32(20), np.float32(40)]
+        # tmp = np.array([20, 40]).astype(np.float32)
+        out = [vector + 1, vector + 2]
+        return out
+    else:
+        # out = [np.float32(10), np.float32(10)]
+        # tmp = np.array([10, 10]).astype(np.float32)
+        out = [vector, vector]
+        return out
+
+
+def test_flag(bstr):
+    if bstr == b'test_str_inp':
+        return True
+    else:
+        return False
+
+
+def my_func_str(tf_str):
+    if test_flag(tf_str):
+        tmp = np.array([20, 40]).astype(np.float32)
+        out = [tmp, tmp]
+        return out
+    else:
+        tmp = np.array([10, 10]).astype(np.float32)
+        out = [tmp, tmp]
+        return out
+
+# hello = tf.constant('Hello, TensorFlow!')
+# bye = tf.constant('bye')
+# sess = tf.Session()
+# print(sess.run(hello))
+
+choice = tf.placeholder(dtype=tf.string, name='choice')
+
+test_dict = {'choice': choice, 'x': tf.zeros(10, dtype=tf.float32), 'y': tf.ones(10, dtype=tf.float32)}
+
+a = tf.placeholder(tf.float32, shape=10, name='a')
+
+def f1(): return a*test_dict['x']
+def f2(): return a*test_dict['y']
+res = tf.cond(tf.equal(test_dict['choice'], tf.constant('zero')), f1, f2)
+
+with tf.Session() as sess:
+    hello = tf.constant('Hello, TensorFlow!')
+    bye = tf.constant('bye')
+    inp = tf.placeholder(tf.float32)
+    y = tf.py_func(my_func, [inp], tf.float32)
+    y *= 2
+    str_inp = tf.placeholder(tf.string)
+    str_out = tf.py_func(my_func_str, [str_inp], Tout=[tf.float32, tf.float32], name='py_func_str')
+    # dict_out = tf.py_func(my_func_dict, [str_inp, test_dict['x']], Tout=[tf.float32, tf.float32], name='py_func_str')
+    dict_out = tf.py_func(my_func_dict, [str_inp, test_dict['x']], Tout=[tf.float32, tf.float32], name='py_func_str')
+    # dict_out = test_dict['x']
+    # if test_dict['choice'] == tf.constant('zero'):
+    #     res = a * test_dict['x']
+    # elif test_dict['choice'] == tf.constant('one'):
+    #     res = a * test_dict['y']
+    # else:
+    #     raise NameError('unknown choice')
+
+    # dict_out = tf.py_func(my_func_dict, [dict_inp])
+    test_str = sess.run(hello)
+    test_py_func, test_py_func_str = sess.run([y, str_out], feed_dict={inp: 3, str_inp: 'test_str_inp'})
+    res = sess.run(res, feed_dict={a: np.ones(10, dtype=np.float32),
+                                   choice: 'not_zero'})
+
+    test_dict_out = sess.run(dict_out, feed_dict={str_inp: 'test_str_inp_NOT', choice: 'zero'})
+
+    print(test_str)
+    print(test_py_func)
+    print(test_py_func_str)
+    print(res)
+    print(test_dict_out)
+    # print(res)
+    # test_py_func_dict = sess.run()
+
+

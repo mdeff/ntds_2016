@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+Pillow # PIL fork
+PyWavelets
+
+# tensorflow >= 0.11rc2
+
+jupyter
+ipython
