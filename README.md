@@ -39,8 +39,8 @@ presented in class.
 4. TensorFlow: [exercise][a04_ex], [solution][a04_sol].
 5. Neural Networks: [assignment][a05_ass], [solution][a05_sol].
 6. Recurrent Neural Networks: [assignment][a06_ass], [solution][a06_sol].
-7. Graph Fourier Transform: [exercise][a07_ex], solution.
-8. Transductive Learning using Graphs: [assignment][a08_ass], solution.
+7. Graph Fourier Transform: [exercise][a07_ex], [solution][a07_sol].
+8. Transductive Learning using Graphs: [assignment][a08_ass], [solution][a08_sol].
 
 [algorithms]: http://nbviewer.jupyter.org/github/mdeff/ntds_2016/tree/with_outputs/algorithms
 [a01_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/01_ex_graph_science.ipynb
@@ -58,7 +58,9 @@ presented in class.
 [a06_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/06_ass_recurrent_nn.ipynb
 [a06_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/06_sol_recurrent_nn.ipynb
 [a07_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/07_ex_graph_fourier.ipynb
+[a07_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/07_sol_graph_fourier.ipynb
 [a08_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/08_ass_graph_inpainting.ipynb
+[a08_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/08_sol_graph_inpainting.ipynb
 
 The final evaluation is a **class project**, taking place at the end of the
 semester. Read more about it in the [project description][desc]. Below are the
