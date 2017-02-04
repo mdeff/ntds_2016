@@ -62,27 +62,28 @@ presented in class.
 [a08_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/08_ass_graph_inpainting.ipynb
 [a08_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/08_sol_graph_inpainting.ipynb
 
-The final evaluation is a **class project**, taking place at the end of the
-semester. Read more about it in the [project description][desc]. Below are the
-projects proposed by the students.
-* [[proposal][01p], [analysis][01r], [slides][01s]] *Breast Cancer Classifcation*, Robin Demesmaeker
-* [[proposal][02p], [analysis][02r], [slides][02s]] *How Fake News Go Viral?*, Victor Kristof, William Trouleau
-* [[proposal][03p], [analysis][03r], [slides][03s]] *Twitter User Gender Classification*, Gaétan Ramet, Benjamin Schloesing, Yuan Yao
-* [[proposal][04p], [analysis][04r], [slides][04s]] *Youtube Fame Predictor*, Benoît Steinmann, Cyrille Rolland
-* [[proposal][05p], [analysis][05r], [slides][05s]] *Emotion Recognition from Faces*, Patryk Oleniuk, Carmen Galotta
-* [[proposal][06p], [analysis][06r], [slides][06s]] *Airbnb New User Bookings*, Pecoraro Cyril, Jaume Guillaume, Grisard Malo
-* [[proposal][07p], [analysis][07r], [slides][07s]] *Predicting an Election from Tweets*, Ercolani Chiara, Vorobiev Mikhail, Juillard Michaël
-* [[proposal][08p], [analysis][08r], [slides][08s]] *Fisheries Monitoring*, Damian Pascual Ortiz, Pablo Mainar Jovaní
-* [[proposal][09p], [analysis][09r], [slides][09s]] *El Nino*, Cotting Matthieu, Bonelli Alberto, Allani Mohamed
-* [[proposal][10p], [analysis][10r], [slides][10s]] *Alzheimer Disease Detection*, Christian Abbet, Maxime Bonhenblust, Nicolas Masserey
-* [[proposal][11p], [analysis][11r], [slides][11s]] *Estimating Hyper-Parameters for Compressed Sensing*, Dimitris Perdios
-* [[proposal][12p], [analysis][12r], [slides][12s]] *Global Warming*, Effrosyni Simou
-* [[proposal][13p], [analysis][13r], [slides][13s]] *Daily News for Stock Market Prediction*, Jeroen Le Maire
-* [[proposal][14p], [analysis][14r], [slides][14s]] *Open Source Software Support*, Pavlos Nikolopoulos, Matthaios Olma, Stefanos Skalistis
-* [[proposal][15p], [analysis][15r], [slides][15s]] *Epileptic Seizures Prediction*, Sophie du Bois
-* [[proposal][16p], [analysis][16r], [slides][16s]] *Product Recommendation*, Berke Aral Sönmez, Alper Köse
-* [[proposal][17p], [analysis][17r], [slides][17s]] *Sentiment Analysis*, Meryem Wehbe, Samuel Beuret, Valentine Santarelli
-* [[proposal][18p], [analysis][18r], [slides][18s]] *Bike Sharing Demand*, Vincent Hardy
+## Projects
+
+Part of the course is evaluated by a [project][desc], proposed and carried out
+by groups of one to three students. Below is their work.
+* [[proposal][01p], [analysis][01r], [slides][01s]] Breast Cancer Classifcation, *Robin Demesmaeker*
+* [[proposal][02p], [analysis][02r], [slides][02s]] How Fake News Go Viral?, *Victor Kristof, William Trouleau*
+* [[proposal][03p], [analysis][03r], [slides][03s]] Twitter User Gender Classification, *Gaétan Ramet, Benjamin Schloesing, Yuan Yao*
+* [[proposal][04p], [analysis][04r], [slides][04s]] Youtube Fame Predictor, *Benoît Steinmann, Cyrille Rolland*
+* [[proposal][05p], [analysis][05r], [slides][05s]] Emotion Recognition from Faces, *Patryk Oleniuk, Carmen Galotta*
+* [[proposal][06p], [analysis][06r], [slides][06s]] Airbnb New User Bookings, *Pecoraro Cyril, Jaume Guillaume, Grisard Malo*
+* [[proposal][07p], [analysis][07r], [slides][07s]] Predicting an Election from Tweets, *Ercolani Chiara, Vorobiev Mikhail, Juillard Michaël*
+* [[proposal][08p], [analysis][08r], [slides][08s]] Fisheries Monitoring, *Damian Pascual Ortiz, Pablo Mainar Jovaní*
+* [[proposal][09p], [analysis][09r], [slides][09s]] El Nino, *Cotting Matthieu, Bonelli Alberto, Allani Mohamed*
+* [[proposal][10p], [analysis][10r], [slides][10s]] Alzheimer Disease Detection, *Christian Abbet, Maxime Bonhenblust, Nicolas Masserey*
+* [[proposal][11p], [analysis][11r], [slides][11s]] Estimating Hyper-Parameters for Compressed Sensing, *Dimitris Perdios*
+* [[proposal][12p], [analysis][12r], [slides][12s]] Global Warming, *Effrosyni Simou*
+* [[proposal][13p], [analysis][13r], [slides][13s]] Daily News for Stock Market Prediction, *Jeroen Le Maire*
+* [[proposal][14p], [analysis][14r], [slides][14s]] Open Source Software Support, *Pavlos Nikolopoulos, Matthaios Olma, Stefanos Skalistis*
+* [[proposal][15p], [analysis][15r], [slides][15s]] Epileptic Seizures Prediction, *Sophie du Bois*
+* [[proposal][16p], [analysis][16r], [slides][16s]] Product Recommendation, *Berke Aral Sönmez, Alper Köse*
+* [[proposal][17p], [analysis][17r], [slides][17s]] Sentiment Analysis, *Meryem Wehbe, Samuel Beuret, Valentine Santarelli*
+* [[proposal][18p], [analysis][18r], [slides][18s]] Bike Sharing Demand, *Vincent Hardy*
 
 [desc]: http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/project/description.pdf
 
@@ -113,9 +114,9 @@ projects proposed by the students.
 [09p]: project/proposals/el_nino.pdf
 [09r]: project/reports/el_nino/
 [09s]: project/slides/el_nino.pdf
-[10p]: project/proposals/alzheimer_disease.pdf
-[10r]: project/reports/alzheimer_disease/
-[10s]: project/slides/alzheimer_disease.pdf
+[10p]: project/proposals/alzheimer_detection.pdf
+[10r]: project/reports/alzheimer_detection/
+[10s]: project/slides/alzheimer_detection.pdf
 [11p]: project/proposals/compressed_sensing.pdf
 [11r]: project/reports/compressed_sensing/
 [11s]: project/slides/compressed_sensing.pdf
