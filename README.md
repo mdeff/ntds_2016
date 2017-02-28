@@ -16,18 +16,18 @@ help during the Data Science process.
 4. High Performance Computing: [exercise][t03_ex], [solution][t03_sol].
 5. Data visualization: [exercise][t04_ex], [solution][t04_sol].
 
-[toolkit]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/tree/with_outputs/toolkit
-[t00_intro]:  http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/00_introduction.ipynb
-[t01_demo]:   http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_demo_acquisition_exploration.ipynb
-[t01_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_ex_acquisition_exploration.ipynb
-[t01_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_sol_acquisition_exploration.ipynb
-[t02_demo]:   http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/02_demo_exploitation.ipynb
-[t02_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/02_ex_exploitation.ipynb
-[t02_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/02_sol_exploitation.ipynb
-[t03_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/03_ex_hpc.ipynb
-[t03_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/03_sol_hpc.ipynb
-[t04_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/04_ex_visualization.ipynb
-[t04_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/04_sol_visualization.ipynb
+[toolkit]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/tree/with_outputs/toolkit
+[t00_intro]:  https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/00_introduction.ipynb
+[t01_demo]:   https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_demo_acquisition_exploration.ipynb
+[t01_ex]:     https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_ex_acquisition_exploration.ipynb
+[t01_sol]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/01_sol_acquisition_exploration.ipynb
+[t02_demo]:   https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/02_demo_exploitation.ipynb
+[t02_ex]:     https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/02_ex_exploitation.ipynb
+[t02_sol]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/02_sol_exploitation.ipynb
+[t03_ex]:     https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/03_ex_hpc.ipynb
+[t03_sol]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/03_sol_hpc.ipynb
+[t04_ex]:     https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/04_ex_visualization.ipynb
+[t04_sol]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/toolkit/04_sol_visualization.ipynb
 
 **Machine Learning** (ML) & **Graph Signal Processing** (GSP) [algorithms].
 These exercises are designed so as to familiarize yourself with the algorithms
@@ -42,25 +42,25 @@ presented in class.
 7. Graph Fourier Transform: [exercise][a07_ex], [solution][a07_sol].
 8. Transductive Learning using Graphs: [assignment][a08_ass], [solution][a08_sol].
 
-[algorithms]: http://nbviewer.jupyter.org/github/mdeff/ntds_2016/tree/with_outputs/algorithms
-[a01_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/01_ex_graph_science.ipynb
-[a01_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/01_sol_graph_science.ipynb
-[a02_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_ex_clustering.ipynb
-[a02_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_sol_clustering.ipynb
-[a02_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_ass_clustering.ipynb
-[a02_sass]:   http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_sol_assignment.ipynb
-[a03_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/03_ex_classification.ipynb
-[a03_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/03_sol_classification.ipynb
-[a04_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/04_ex_tensorflow.ipynb
-[a04_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/04_sol_tensorflow.ipynb
-[a05_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/05_ass_convnet.ipynb
-[a05_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/05_sol_convnet.ipynb
-[a06_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/06_ass_recurrent_nn.ipynb
-[a06_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/06_sol_recurrent_nn.ipynb
-[a07_ex]:     http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/07_ex_graph_fourier.ipynb
-[a07_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/07_sol_graph_fourier.ipynb
-[a08_ass]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/08_ass_graph_inpainting.ipynb
-[a08_sol]:    http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/08_sol_graph_inpainting.ipynb
+[algorithms]: https://nbviewer.jupyter.org/github/mdeff/ntds_2016/tree/with_outputs/algorithms
+[a01_ex]:     https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/01_ex_graph_science.ipynb
+[a01_sol]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/01_sol_graph_science.ipynb
+[a02_ex]:     https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_ex_clustering.ipynb
+[a02_sol]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_sol_clustering.ipynb
+[a02_ass]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_ass_clustering.ipynb
+[a02_sass]:   https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/02_sol_assignment.ipynb
+[a03_ex]:     https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/03_ex_classification.ipynb
+[a03_sol]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/03_sol_classification.ipynb
+[a04_ex]:     https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/04_ex_tensorflow.ipynb
+[a04_sol]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/04_sol_tensorflow.ipynb
+[a05_ass]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/05_ass_convnet.ipynb
+[a05_sol]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/05_sol_convnet.ipynb
+[a06_ass]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/06_ass_recurrent_nn.ipynb
+[a06_sol]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/06_sol_recurrent_nn.ipynb
+[a07_ex]:     https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/07_ex_graph_fourier.ipynb
+[a07_sol]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/07_sol_graph_fourier.ipynb
+[a08_ass]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/08_ass_graph_inpainting.ipynb
+[a08_sol]:    https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/algorithms/08_sol_graph_inpainting.ipynb
 
 ## Projects
 
@@ -85,7 +85,7 @@ by groups of one to three students. Below is their work.
 * [[proposal][17p], [analysis][17r], [slides][17s]] Sentiment Analysis, *Meryem Wehbe, Samuel Beuret, Valentine Santarelli*
 * [[proposal][18p], [analysis][18r], [slides][18s]] Bike Sharing Demand, *Vincent Hardy*
 
-[desc]: http://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/project/description.pdf
+[desc]: https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/project/description.pdf
 
 [01p]: project/proposals/breast_cancer.pdf
 [01r]: project/reports/breast_cancer/
