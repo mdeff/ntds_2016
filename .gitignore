@@ -4,12 +4,12 @@
 __pycache__/
 .ipynb_checkpoints/
 
-data/
-auth/
+/data/
+/auth/
 
-README.html
+/README.html
 
-project/description.pdf
+/project/description.pdf
 *.aux
 *.fls
 *.toc
