@@ -2,18 +2,18 @@ FROM python:3.5
 
 MAINTAINER Michaël Defferrard <michael.defferrard@epfl.ch>
 
-RUN echo "deb http://apt.llvm.org/jessie/ llvm-toolchain-jessie-3.8 main" >> /etc/apt/sources.list && \
+RUN echo "deb http://apt.llvm.org/jessie/ llvm-toolchain-jessie-3.9 main" >> /etc/apt/sources.list && \
     wget -O - http://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - && \
     apt-get update && \
     apt-get install -y --no-install-recommends \
-        llvm-3.8-runtime llvm-3.8-dev \
+        llvm-3.9-runtime llvm-3.9-dev \
         libatlas-base-dev liblapack-dev gfortran \
         && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 # Alternative to ATLAS: libopenblas-dev
 
-ENV LLVM_CONFIG=llvm-config-3.8
+ENV LLVM_CONFIG=llvm-config-3.9
 
 WORKDIR /data
 RUN git clone --depth=1 https://github.com/mdeff/ntds_2016.git repo && \
