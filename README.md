@@ -1,11 +1,13 @@
-# A Network Tour of Data Science
+# A Network Tour of Data Science, edition 2016
 
-This repository contains the exercises for the EPFL master course [EE-558
-A Network Tour of Data Science][epfl] ([moodle]). There is two types of
-exercises.
+This repository contains the exercises for the EPFL master course [EE-558 A
+Network Tour of Data Science][epfl] ([moodle]), taught in autumn 2016. Look at
+the [2017 edition] for a course more focused on graphs and networks (instead of
+deep learning). There is two types of exercises.
 
 [epfl]: http://edu.epfl.ch/coursebook/en/a-network-tour-of-data-science-EE-558
 [moodle]: http://moodle.epfl.ch/course/view.php?id=15299
+[2017 edition]: https://github.com/mdeff/ntds_2017
 
 The **Data Scientist toolkit**, a set of [tools][toolkit], mostly in Python, to
 help during the Data Science process.
