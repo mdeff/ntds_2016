@@ -1,5 +1,11 @@
 # A Network Tour of Data Science, edition 2016
 
+[![Binder](https://mybinder.org/badge.svg)][binder_lab]
+&nbsp; (Jupyter [lab][binder_lab] or [notebook][binder_notebook])
+
+[binder_lab]: https://mybinder.org/v2/gh/mdeff/ntds_2016/master?urlpath=lab
+[binder_notebook]: https://mybinder.org/v2/gh/mdeff/ntds_2016/master?urlpath=tree
+
 This repository contains the exercises for the EPFL master course [EE-558 A
 Network Tour of Data Science][epfl] ([moodle]), taught in autumn 2016. Look at
 the [2017 edition] for a course more focused on graphs and networks (instead of
