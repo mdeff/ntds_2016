@@ -3,8 +3,8 @@
 [![Binder](https://mybinder.org/badge.svg)][binder_lab]
 &nbsp; (Jupyter [lab][binder_lab] or [notebook][binder_notebook])
 
-[binder_lab]: https://mybinder.org/v2/gh/mdeff/ntds_2016/master?urlpath=lab
-[binder_notebook]: https://mybinder.org/v2/gh/mdeff/ntds_2016/master?urlpath=tree
+[binder_lab]: https://mybinder.org/v2/gh/mdeff/ntds_2016/with_outputs?urlpath=lab
+[binder_notebook]: https://mybinder.org/v2/gh/mdeff/ntds_2016/with_outputs?urlpath=tree
 
 This repository contains the exercises for the EPFL master course [EE-558 A
 Network Tour of Data Science][epfl] ([moodle]), taught in autumn 2016. Look at
