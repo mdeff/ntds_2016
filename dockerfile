@@ -38,7 +38,7 @@ RUN chmod +x /usr/bin/tini
 ENTRYPOINT ["/usr/bin/tini", "--"]
 
 CMD ["jupyter", "notebook", "--no-browser", "--port=8888", "--ip=0.0.0.0", \
-     "--config=/data/repo/jupyter_notebook_config.py"]
+     "--config=/data/repo/jupyter_notebook_config.py", "--allow-root"]
 # Authentication: password and SSL certificate in config.
 
 EXPOSE 8888
