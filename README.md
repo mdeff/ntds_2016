@@ -285,6 +285,14 @@ support Windows yet.
 [git]: https://git-scm.com/downloads
 [theano_windows_py35]: https://github.com/Theano/Theano/issues/3376#issuecomment-235034897
 
+## Team
+
+* Instructors:
+[Xavier Bresson](http://www.ntu.edu.sg/home/xbresson),
+[Pierre Vandergheynst](https://people.epfl.ch/pierre.vandergheynst).
+* Assistant:
+[Michaël Defferrard](http://deff.ch).
+
 ## License
 
 All codes and examples are released under the terms of the [MIT
