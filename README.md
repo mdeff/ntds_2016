@@ -10,15 +10,25 @@ This repository contains the exercises for the EPFL master course [EE-558 A
 Network Tour of Data Science][epfl] ([moodle]), taught in autumn 2016. Look at
 the [2017] and [2018] editions for a course more focused on graphs and networks
 (instead of deep learning).
+The course material revolves around the following topics:
 
-## Exercises
+1. [Data Science](https://en.wikipedia.org/wiki/Data_science),
+1. [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning),
+1. [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning),
+1. [Graph Signal Processing](https://arxiv.org/abs/1211.0053).
 
-There is two types of exercises.
+Theoretical knowledge is taught during lectures.
+Practical knowledge is taught through [exercises](#content).
+Both are practiced and evaluated through [four assignments](#content) and a [semester project](#projects).
 
 [epfl]: http://edu.epfl.ch/coursebook/en/a-network-tour-of-data-science-EE-558
 [moodle]: http://moodle.epfl.ch/course/view.php?id=15299
 [2017]: https://github.com/mdeff/ntds_2017
 [2018]: https://github.com/mdeff/ntds_2018
+
+## Content
+
+There is two types of exercises.
 
 The **Data Scientist toolkit**, a set of [tools][toolkit], mostly in Python, to
 help during the Data Science process.
