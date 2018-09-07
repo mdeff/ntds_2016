@@ -9,7 +9,11 @@
 This repository contains the exercises for the EPFL master course [EE-558 A
 Network Tour of Data Science][epfl] ([moodle]), taught in autumn 2016. Look at
 the [2017] and [2018] editions for a course more focused on graphs and networks
-(instead of deep learning). There is two types of exercises.
+(instead of deep learning).
+
+## Exercises
+
+There is two types of exercises.
 
 [epfl]: http://edu.epfl.ch/coursebook/en/a-network-tour-of-data-science-EE-558
 [moodle]: http://moodle.epfl.ch/course/view.php?id=15299
@@ -224,7 +228,7 @@ support Windows yet.
    cd ntds_2016
    ```
 
-3. Optionally, create a [virtual environment][venv]. 
+3. Optionally, create a [virtual environment][venv].
    ```sh
    pyvenv /path/to/new/virtual/env
    . /path/to/new/virtual/env/bin/activate
