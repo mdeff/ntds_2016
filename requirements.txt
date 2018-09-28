@@ -17,7 +17,7 @@ statsmodels==0.6.1
 sympy==1.0
 autograd==1.1.6
 numba==0.28.1
-llvmlite==0.17.0  # was 0.13.0 in my env, but wheel includes llvm since 0.17.0
+llvmlite==0.17.1  # was 0.13.0 in my env, but wheel includes llvm since 0.17.0
 Cython==0.24.1
 
 seaborn==0.7.1
