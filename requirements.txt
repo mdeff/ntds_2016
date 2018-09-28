@@ -1,36 +1,93 @@
-numpy
-scipy
-matplotlib
-scikit-learn
+numpy==1.11.1
+scipy==0.18.1
+matplotlib==1.5.2
+scikit-learn==0.17.1
 
-requests
-facebook-sdk
-tweepy
+requests==2.11.1
+facebook-sdk==2.0.0
+tweepy==3.5.0
 
-pandas
-xlrd
-xlwt
-tables
-sqlalchemy
+pandas==0.18.1
+xlrd==1.0.0
+xlwt==1.1.2
+tables==3.3.0  # was 3.2.3.1 in my env, but wheel includes hdf5 since 3.3.0
+SQLAlchemy==1.0.15
 
-statsmodels
-sympy
-autograd
-numba
-Cython
+statsmodels==0.6.1
+sympy==1.0
+autograd==1.1.6
+numba==0.28.1
+llvmlite==0.17.1  # was 0.13.0 in my env, but wheel includes llvm since 0.17.0
+Cython==0.24.1
 
-seaborn
-ggplot
-altair
-bokeh
+seaborn==0.7.1
+ggplot==0.11.5
+altair==1.2.0
+bokeh==0.12.3
 
-keras
-theano
-# tensorflow: see https://www.tensorflow.org/versions/master/get_started/os_setup.html
-# for the correct target. Something like below.
-https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0-cp35-cp35m-linux_x86_64.whl
+Keras==1.1.0
+Theano==0.8.2
+tensorflow==0.12.0  # was 0.11.0rc1 in my env, but it's not available on PyPI
 
-jupyter
-ipython
+jupyter==1.0.0
+jupyter-client==4.4.0
+jupyter-console==5.0.0
+jupyter-core==4.2.0
+notebook==4.2.3
+nbconvert==4.2.0
+nbformat==4.1.0
+qtconsole==4.2.1
+widgetsnbextension==1.2.6
+ipython==5.1.0
+ipython-genutils==0.1.0
+ipykernel==4.5.0
+ipywidgets==5.2.2
 
-grip
+grip==4.3.2
+nltk==3.2.1
+networkx==1.11
+
+brewer2mpl==1.4.1
+#certifi==2016.8.31  # binder: cannot be removed as installed by conda
+click==6.6
+cycler==0.10.0
+decorator==4.0.10
+docopt==0.6.2
+entrypoints==0.2.2
+Flask==0.11.1
+future==0.15.2
+itsdangerous==0.24
+Jinja2==2.8
+jsonschema==2.5.1
+Markdown==2.6.6
+MarkupSafe==0.23
+mistune==0.7.3
+mpmath==0.19
+numexpr==2.6.1
+oauthlib==2.0.0
+path-and-address==2.0.1
+patsy==0.4.1
+pexpect==4.2.1
+pickleshare==0.7.4
+prompt-toolkit==1.0.7
+protobuf==3.1.0  # was 3.0.0 in my env, but we need 3.1.0 for tf 0.12.0
+#ptyprocess==0.5.1  # binder: cannot be removed as installed by conda
+Pygments==2.1.3
+pyparsing==2.1.9
+python-dateutil==2.5.3
+pytz==2016.6.1
+PyYAML==3.12
+pyzmq==16.0.0
+requests-oauthlib==0.7.0
+simplegeneric==0.8.1
+six==1.10.0
+#terminado==0.6  # binder: cannot be removed as installed by conda
+tornado==4.4.2
+traitlets==4.3.1
+vega==0.4.4
+wcwidth==0.1.7
+Werkzeug==0.11.11
+
+#pip==9.0.1
+#setuptools==20.10.1
+#wheel  # was not installed
