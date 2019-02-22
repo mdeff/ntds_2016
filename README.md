@@ -86,7 +86,9 @@ presented in class.
 ## Projects
 
 Part of the course is evaluated by a [project][desc], proposed and carried out
-by groups of one to three students. Below is their work.
+by groups of one to three students.
+Below is the work of the 38 students enrolled that year.
+
 * [[proposal][01p], [analysis][01r], [slides][01s]] Breast Cancer Classifcation, *Robin Demesmaeker*
 * [[proposal][02p], [analysis][02r], [slides][02s]] How Fake News Go Viral?, *Victor Kristof, William Trouleau*
 * [[proposal][03p], [analysis][03r], [slides][03s]] Twitter User Gender Classification, *Gaétan Ramet, Benjamin Schloesing, Yuan Yao*
