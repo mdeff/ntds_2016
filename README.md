@@ -106,6 +106,8 @@ by groups of one to three students. Below is their work.
 * [[proposal][17p], [analysis][17r], [slides][17s]] Sentiment Analysis, *Meryem Wehbe, Samuel Beuret, Valentine Santarelli*
 * [[proposal][18p], [analysis][18r], [slides][18s]] Bike Sharing Demand, *Vincent Hardy*
 
+![projects](project/projects.jpg)
+
 [desc]: https://nbviewer.jupyter.org/github/mdeff/ntds_2016/blob/with_outputs/project/description.pdf
 
 [01p]: project/proposals/breast_cancer.pdf
