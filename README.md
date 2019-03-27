@@ -1,6 +1,6 @@
 # A Network Tour of Data Science, edition 2016
 
-[![Binder](https://mybinder.org/badge.svg)][binder]
+[![Binder](https://mybinder.org/badge_logo.svg)][binder]
 
 [binder]: https://mybinder.org/v2/gh/mdeff/ntds_2016/with_outputs?urlpath=tree
 
