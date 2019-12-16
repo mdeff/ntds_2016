@@ -298,7 +298,7 @@ support Windows yet.
 
 ## Team
 
-* Instructors:
+* Lecturers:
 [Xavier Bresson](http://www.ntu.edu.sg/home/xbresson),
 [Pierre Vandergheynst](https://people.epfl.ch/pierre.vandergheynst).
 * Assistant:
