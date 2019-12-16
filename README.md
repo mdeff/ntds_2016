@@ -5,17 +5,17 @@
 [binder]: https://mybinder.org/v2/gh/mdeff/ntds_2016/with_outputs?urlpath=tree
 
 This repository contains the material for the practical work associated with the EPFL master course [EE-558 A Network Tour of Data Science][epfl] ([moodle]), taught in fall 2016.
-Look at the [2017], [2018], and [2019] editions for a course more focused on graphs and networks (instead of deep learning).
 The course material revolves around the following topics:
-
-1. [Data Science](https://en.wikipedia.org/wiki/Data_science),
-1. [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning),
-1. [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning),
-1. [Graph Signal Processing](https://arxiv.org/abs/1211.0053).
+[Data Science](https://en.wikipedia.org/wiki/Data_science),
+[Machine Learning](https://en.wikipedia.org/wiki/Machine_learning),
+[Deep Learning](https://en.wikipedia.org/wiki/Deep_learning),
+[Graph Signal Processing](https://arxiv.org/abs/1211.0053).
 
 Theoretical knowledge is taught during lectures.
 Practical knowledge is taught through [exercises](#content).
 Both are practiced and evaluated through [four assignments](#content) and a [semester project](#projects).
+
+Look at the [2017], [2018], and [2019] editions for a course more focused on graphs and networks (instead of deep learning).
 
 [epfl]: http://edu.epfl.ch/coursebook/en/a-network-tour-of-data-science-EE-558
 [moodle]: http://moodle.epfl.ch/course/view.php?id=15299
